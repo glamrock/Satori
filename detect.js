@@ -9,6 +9,10 @@ var lang = (navigator.language || navigator.userLanguage || 'en').substr(0, 2);
 if(!known[lang])
     lang = 'en';
 
-$('div[lang=' + lang + ']').show();
+// wondershowzen!
+$('div.download[lang=' + lang + ']').show();
 
-$('div[lang!=' + lang + ']').hide();
+// hide all the things!
+$('div.download[lang!=' + lang + ']').hide();
+
+
