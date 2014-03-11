@@ -1,0 +1,22 @@
+{
+  "name": "Torsion",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Tor Browser Bundle distribution and verification",
+  "background": {
+    "scripts": ["flashproxy.js", "background.js"]
+  },
+  "icons": {
+    "24" : "images/onion24.png",
+    "48" : "images/onion48.png",
+    "128" : "images/onion128.png"
+  },
+  "browser_action": {
+    "default_icon": "images/onion.png",
+    "default_title": "Torsion",
+    "default_popup": "menu.html"
+  },
+   "incognito": "spanning",
+  "permissions": [""],
+  "content_security_policy": "script-src 'self'; object-src 'self'"
+  }
