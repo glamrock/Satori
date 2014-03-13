@@ -1,8 +1,8 @@
 var known = {
-    en: true,
-    fa: true,
-    ar: true,
-    zh: true
+    en: true, //english
+    fa: true, //farsi
+    ar: true, //arabic
+    zh: true //
 };
 
 var lang = (navigator.language || navigator.userLanguage || 'en').substr(0, 2);
@@ -15,4 +15,4 @@ $('div.download[lang=' + lang + ']').show();
 // hide all the things!
 $('div.download[lang!=' + lang + ']').hide();
 
-
+// do people even read these things
