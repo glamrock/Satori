@@ -2,7 +2,7 @@
 "update_url": "https://clients2.google.com/service/update2/crx",
 
   "name": "Satori",
-  "description": "Tor downloadables and hash verification (ALPHA)",
+  "description": "Tamper-resistant Tor Browser Bundle downloads",
   "version": "0.1",
   "manifest_version": 2,
   "offline_enabled": true,
