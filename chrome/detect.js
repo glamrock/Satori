@@ -2,7 +2,16 @@ var known = {
     en: true, //english
     fa: true, //farsi
     ar: true, //arabic
-    zh: true //
+    zh: true, //chinese
+    ru: true, //russian
+    vi: true, //vietnamese
+    es: true, //spanish
+    it: true, //italian
+    ko: true, //korean
+    pl: true, //polish
+    nl: true, //dutch
+    de: true, //german
+    pt: true //portuguese
 };
 
 var lang = (navigator.language || navigator.userLanguage || 'en').substr(0, 2);
