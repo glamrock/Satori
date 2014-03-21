@@ -1,7 +1,44 @@
+body {
+    width:350px;
+    min-height:400px;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    margin: 10px;
+    padding: none;
+	color: #1E1D1F; /* off-black */
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em; 
+	background-color: #ffffff; /* off-white */
+}
+
+a, a:link { 
+	color: #EB1A06; /* red */
+	font-weight: normal; 
+    text-decoration: none; 
+    border-bottom:1px solid #9BF0E9; /* very light blue */
+}
+
+a:visited {
+    color: #0E929D; /* blue */
+}
+
+a.button { color: #fff; }
+a.button:visited { color: #fff;}
+
+p { margin: 0 0 10px 0; padding: 0; }
+
+h1, h2 {	color: #0E929D; /* blue */ font-weight: normal;}
+
+h1 { font-size: 34px; margin: 0 0 20px; padding: 5px 0 0 0; }
+
+h2 { font-size: 28px; margin: 0 0 15px; padding: 10px 0 0 0; }
+
+
 /* BUTTON CRAZINESS BELOW */
 
 /* centered because of RTL text, elseways this could get pretty crazy */
-.fa1 {
+.button {
 	-moz-box-shadow:inset 0px 1px 0px 0px #d197fe;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #d197fe;
 	box-shadow:inset 0px 1px 0px 0px #d197fe;
@@ -37,12 +74,12 @@
 	text-shadow:1px 1px 0px #7d15cd;
 }
 
-.fa1:hover {
+.button:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #7c16cb), color-stop(1, #a53df6) );
 	background:-moz-linear-gradient( center top, #7c16cb 5%, #a53df6 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7c16cb', endColorstr='#a53df6');
 	background-color:#7c16cb;
-}.fa1:active {
+}.button:active {
 	position:relative;
 	top:1px;
 }
