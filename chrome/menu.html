@@ -1,26 +1,27 @@
 <html>
 <head>
 <!--    <script type="text/javascript" src="l10n.js"></script>
-    <script type="text/javascript" src="menu.js"></script> -->
+    <script type="text/javascript" src="localization.js"></script>-->
+    <script type="text/javascript" src="compiled.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.3.2.js"></script>
+    <script type="text/javascript" src="toggle.js"></script>
     <link rel='stylesheet' type='text/css' href='css.css'/>
 </head>
 <body>
-
-<!-- menu display -->
-
-    <!-- need: icons that glow from OS detection
-               TBB files uploaded to AWS
-               orbot.apk to share -->
-
-    <!--
-        <div id="mainmenu" >
-            <div id="os">
-                <img src="img/windows.png">
-            </div>
-        </div>
-    -->
+<div id="menu">
+<ul>
+    <li>
+        <h1><img src="img/download.png" />Download</h1>
+        <div>contentA</div>
+        <h1><img src="img/hash.png" />Generate Hash</h1>
+        <div>contentB</div>
+        <h1><img src="img/lock.png" />View signatures and hashes</h1>
+        <div>contentC</div>
+    </li>
+</ul>
 
 
+<!--
 <div id="menu">
 
     <div class="item"><a target="_blank" href="download.html" target="_blank"><img src="img/download.png" />Download</a></div>
@@ -28,6 +29,8 @@
     <div class="item"><a href="signatures.html" target="_top"><img src="img/lock.png" />View signatures and hashes</a></div>
 <!--    <div class="item"></div>
     <div class="item"><a href="all.html" target="_top"><img src="img/all.png" />View <b>all</b> downloads</a></div> -->
+
+
 
 </div>
 
@@ -43,5 +46,7 @@
     <p>Menu icons by  <a href="http://lunartemplates.com">Lunar Templates</a> and <a href="http://ffra.deviantart.com/">Fritz Franke</a>. These are licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons</a>.</p>
 </div>
 
+<!-- this needs to be post-dom -->
+    <script type="text/javascript" src="toggle.js"></script>
 </body>
 </html>

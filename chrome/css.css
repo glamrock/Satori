@@ -1,3 +1,7 @@
+html {
+    overflow-y: auto;
+}
+
 body {
 	background: #ffffff url('img/background2.jpg') top left;
     min-height:400px;
