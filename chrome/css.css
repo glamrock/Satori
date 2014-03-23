@@ -13,7 +13,7 @@ a, a:link {
 	color: #0C8794; /* blue */
 	font-weight: normal; 
     text-decoration: none; 
-    border-bottom:1px solid #9BF0E9; /* very light blue */
+    border-bottom:1px solid #B49ABB; /* lavendar */
 }
 
 a img {
@@ -21,7 +21,8 @@ a img {
 }
 
 a:visited {
-    color: #8E1A57; /* orchid */
+/*    color: #8E1A57; /* orchid */
+    border-bottom: 0px;
 }
 
 a.button { color: #fff; }
@@ -45,7 +46,9 @@ h2 { font-size: 28px; margin: 0 0 15px; padding: 10px 0 0 0; }
     font-size: 20px;
 }
 
-#menu a { padding: 10px; border-bottom: 0px; }
+.item { padding: 10px; height: 50px; line-height: 50px;}
+.item p { line-height: 48px;}
+.item a { border-bottom: 0px; }
 
 #credits {
     width: 600px;
@@ -56,6 +59,11 @@ h2 { font-size: 28px; margin: 0 0 15px; padding: 10px 0 0 0; }
     margin: 0 auto;
     padding: 20px;
     margin-top: 20px;
+}
+
+#credits a {
+    color: #552377;
+    border-bottom: 1px solid #386178;
 }
 
 /* BUTTON CRAZINESS BELOW */
