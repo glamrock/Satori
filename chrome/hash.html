@@ -7,20 +7,26 @@
 </head>
 <body>
 
+<!-- initial screen for drag and dropping files -->
     <table id="startup">
         <tbody><tr>
             <td>
                 <div id="dropzone">
-                    <button id="drag">Select your files to test</button>
-                    <p>You can also drag and drop files here to test.</p>
+                    <button id="drag">Select your files to generate a hash.</button>
+                    <p>You can also drag and drop files here.</p>
                 </div>        
             </td>
             </tr>
         </tbody>
     </table>
 
+<!-- list the hashes -->
     <div id='hashList'></div>
     <div id="status">
+
+<!-- this is just sha, but maybe md5 in future? sha1 could also be useful
+     I mean md5 is broken bullshit, but curious what the peanut gallery thinks
+     anyway, the function is built in here to allow for future laziness -->
         <button id="hash" value='Sha256'></button>
         <progress id='progress' value='0'></progress>
     </div>
