@@ -17,7 +17,7 @@ What Satori does is provide access to verifiable bundles of privacy-enhancing so
 This software is currently ***alpha***.
 
 ###License
-BSD 3-clause, a [supervillain-friendly](http://i.imgur.com/1xV099o.jpg) license.
+Artistic License 2.0, a [supervillain-friendly](http://i.imgur.com/1xV099o.jpg) license.
 
 ###[Contact](https://github.com/glamrock/contact)
 griffin [@](at) cryptolab.net
