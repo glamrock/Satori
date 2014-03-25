@@ -90,6 +90,7 @@ td.hash { /* sha */
     background-color: rgba(255,255,255,0.3);
     border-radius: 24px 24px 24px 24px;
     border: 0px;
+    color 
     margin: 0 auto;
     padding: 20px;
     margin-top: 20px;
@@ -98,6 +99,7 @@ td.hash { /* sha */
 #credits a {
     color: #552377;
     border-bottom: 1px solid #386178;
+    margin: 0 auto;
 }
 
 /* BUTTON CRAZINESS BELOW */
@@ -157,14 +159,16 @@ input[type=checkbox] {
    top: -9999px;
    left: -9999px;
 }
-label { 
+label { /* verification selector */
 /* needs better styling */
-  -webkit-appearance: menulist;
-  -moz-appearance: menulist; 
-  display: inline;
-  width: 85px;
-  margin: 10px 0 10px 0;
-  cursor: pointer;
+    font-size: 14px;
+    color: #95B1DC; /*faded light blue */
+    -webkit-appearance: menulist;
+    -moz-appearance: menulist; 
+    display: inline;
+    width: 85px;
+    margin: 10px 0 10px 0;
+    cursor: pointer #ffffff;
 }
 
 div#winsig pre {
@@ -174,12 +178,13 @@ div#winsig pre {
 
 /* hidden/default */
 div#winsig, div#linuxsig, div#macsig {
-   background: #EDE5E2; /* light grey */
-   width: 450px;
-   height: 250px;
-   color: #1a1a1a; /*off-black*/
-   text-align: left;
-   display:none;
+    background: #EDE5E2; /* light grey */
+    color: #ffffff; /*off-black*/
+    text-align: center;
+    display:none;
+    font-size: 14px;
+    background-color: rgba(0,0,0,0.3);
+    text-shadow: none;
 }
 
 /* onclick/shown */
