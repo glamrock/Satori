@@ -3,11 +3,12 @@ html {
 }
 
 body {
-	background: #ffffff url('img/background2.jpg') top left;
+	background: #ffffff url('img/background2.jpg') top left fixed;
     min-height:400px;
     margin: 10px;
     padding: none;
-	color: #1E1D1F; /* off-black */
+    color: #B49ABB; /* lavendar */
+    text-shadow: 1px 1px 1px #000;
 	font-family: Arial, Verdana, Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 1.5em; 
@@ -18,6 +19,7 @@ a, a:link {
 	font-weight: normal; 
     text-decoration: none; 
     border-bottom:1px solid #B49ABB; /* lavendar */
+    text-shadow: 1px 1px 1px #000;
 }
 
 a img {
@@ -34,11 +36,39 @@ a.button:visited { color: #fff;}
 
 p { margin: 0 0 10px 0; }
 
-h1, h2 {	color: #0E929D; /* blue */ font-weight: normal;}
+h1, h2 {	
+    color: #0C8794; /* #0E929D blue */ 
+    font-weight: normal;
+    text-shadow: 1px 1px 1px #042330;
+}
 
-h1 { font-size: 34px; margin: 0 0 20px; padding: 5px 0 0 0; }
+h1 { font-size: 34px; padding: 5px 0 0 0; }
 
-h2 { font-size: 28px; margin: 0 0 15px; padding: 10px 0 0 0; }
+h2 { font-size: 28px; padding: 10px 0 0 0; }
+
+
+/* verification section */
+
+button#hash {
+    display:none;
+}
+
+progress {
+    display:none;
+}
+
+td.name { /* this is the file name display */
+    font-size: 12px; 
+    max-width: 150px;
+    color: #ED4B8F; /* pink */
+    border-bottom: 1px solid;
+}
+
+td.hash { /* sha */
+    font-size: 13px;
+    color: #95B1DC; /*faded light blue */
+    border-bottom: 1px solid;
+}
 
 #menu {
     width: 600px;
@@ -138,7 +168,7 @@ label {
 }
 
 div#winsig pre {
-    background: #EDE5E2;
+    background: #EDE5E2; /* light grey */
 
 }
 

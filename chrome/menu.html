@@ -2,9 +2,8 @@
 <head>
 <!--    <script type="text/javascript" src="l10n.js"></script>
     <script type="text/javascript" src="localization.js"></script>-->
+<!-- fix language detection    <script type="text/javascript" src="detect.js"></script> -->
     <script type="text/javascript" src="compiled.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.3.2.js"></script>
-    <script type="text/javascript" src="toggle.js"></script>
     <link rel='stylesheet' type='text/css' href='css.css'/>
 </head>
 <body>
@@ -12,9 +11,179 @@
 <ul>
     <li>
         <h1><img src="img/download.png" />Download</h1>
-        <div>contentA</div>
+
+
+<!-- download display -->
+
+<!-- ENGLISH -->
+
+<h2>Tor Browser Bundle</h2>
+<div id="tbb">
+    <div lang="en" id="gib">
+       <p><a href="https://clients2.google.com/service/update2/crx?response=redirect&x=id%3Ddajjbehmbnbppjkcnpdkaniapgdppdnc%26uc" download="concept.zip" class="button">Proof of concept</a></p>
+        <label for="sig0"><a>verification</a></label>
+        <input type="checkbox" id="sig0">
+        <div id="winsig">
+            <p>(sha256sum goes here)</p>
+    </div>
+
+<!-- FARSI -->
+    <div lang="fa">
+        <div id="windows">
+            <p><a href="tbb/win_fa.exe" download="windows.zip" class="button">Farsi</a></p>
+            <label for="sig1"><a>verification</a></label>
+            <input type="checkbox" id="sig1">
+            <div id="winsig">
+                <pre>(sha256sum goes here)</pre>
+        </div>
+    </div>
+
+<!-- ARABIC -->
+    <div lang="ar">
+
+        <div id="windows">
+            <p><a href="" download="" class="button">Arabic</a></p>
+            <label for="sig2"><a>verification</a></label>
+            <input type="checkbox" id="sig2">
+            <div id="winsig">
+                <p>(sha256sum goes here)</p>
+            </div>
+        </div>
+
+    </div>
+
+<!-- CHINESE -->
+
+    <div lang="zh">
+
+        <!-- via chrome -->
+        <div id="windowscws">
+            <p><a href="" download="windows.zip" class="button">Chinese</a></p>
+            <label for="sig3"><a>verification</a></label>
+            <input type="checkbox" id="sig3">
+            <div id="winsig">
+                <p>(sha256sum goes here)</p>
+            </div>
+        </div>
+
+        <div id="linuxcws">
+            <p><a href="" download="linux.zip" class="button">Chinese</a></p>
+            <label for="sig4"><a>verification</a></label>
+            <input type="checkbox" id="sig4">
+            <div id="winsig">
+                <p>(sha256sum goes here)</p>
+            </div>
+        </div>
+
+        <div id="maccws">
+            <p><a href="" download="mac.zip" class="button">Chinese</a></p>
+            <label for="sig5"><a>verification</a></label>
+            <input type="checkbox" id="sig5">
+            <div id="winsig">
+                <p>(sha256sum goes here)</p>
+            </div>
+        </div>
+        <!-- via Github -->
+        <div id="windowsgh">
+            <p><a href="" download="windows.zip" class="button">Chinese</a></p>
+            <label for="sig3"><a>verification</a></label>
+            <input type="checkbox" id="sig3">
+            <div id="winsig">
+                <p>(sha256sum goes here)</p>
+            </div>
+        </div>
+
+        <div id="linuxgh">
+            <p><a href="" download="linux.zip" class="button">Chinese</a></p>
+            <label for="sig4"><a>verification</a></label>
+            <input type="checkbox" id="sig4">
+            <div id="winsig">
+                <p>(sha256sum goes here)</p>
+            </div>
+        </div>
+
+        <div id="macgh">
+            <p><a href="" download="mac.zip" class="button">Chinese</a></p>
+            <label for="sig5"><a>verification</a></label>
+            <input type="checkbox" id="sig5">
+            <div id="winsig">
+                <p>(sha256sum goes here)</p>
+            </div>
+        </div>
+
+        <!-- via AWS -->
+        <div id="windowsaws">
+            <p><a href="" download="windows.zip" class="button">Chinese</a></p>
+            <label for="sig3"><a>verification</a></label>
+            <input type="checkbox" id="sig3">
+            <div id="winsig">
+                <p>(sha256sum goes here)</p>
+            </div>
+        </div>
+
+        <div id="linuxaws">
+            <p><a href="" download="linux.zip" class="button">Chinese</a></p>
+            <label for="sig4"><a>verification</a></label>
+            <input type="checkbox" id="sig4">
+            <div id="winsig">
+                <p>(sha256sum goes here)</p>
+            </div>
+        </div>
+
+        <div id="macaws">
+            <p><a href="" download="mac.zip" class="button">Chinese</a></p>
+            <label for="sig5"><a>verification</a></label>
+            <input type="checkbox" id="sig5">
+            <div id="winsig">
+                <p>(sha256sum goes here)</p>
+            </div>
+        </div>
+
+
+    </div>
+
+<!-- RUSSIAN -->
+<!-- VIETNAMESE -->
+<!-- ITALIA! -->
+<!-- SPANISH -->
+<!-- PORTUGUESE -->
+<!-- POLISH -->
+<!-- KOREAN -->
+<!-- DUTCH -->
+<!-- GERMAN -->
+
+
         <h1><img src="img/hash.png" />Generate Hash</h1>
-        <div>contentB</div>
+
+<!-- initial screen for drag and dropping files -->
+<div id="hasher">
+    <table id="startup">
+        <tbody><tr>
+            <td>
+                <div id="dropzone">
+                    <button id="drag">Select your files to generate a hash.</button>
+                    <p>You can also drag and drop files here.</p>
+
+                </div>        
+            </td>
+            </tr>
+        </tbody>
+    </table>
+
+<!-- list the hashes -->
+    <div id='hashList'></div>
+    <div id="status">
+
+<!-- this is just sha, but maybe md5 in future? sha1 could also be useful
+     I mean md5 is broken bullshit, but curious what the peanut gallery thinks
+     anyway, the function is built in here to allow for future laziness -->
+        <button id="hash" value='Sha256'></button>
+        <progress id='progress' value='0'></progress>
+    </div>
+        <div id="select">Select Files</div>
+</div>
+
+
         <h1><img src="img/lock.png" />View signatures and hashes</h1>
         <div>contentC</div>
     </li>
@@ -43,10 +212,8 @@
 
     <!-- Not sure if going to use this <p>Bubble heart icon by <a href="http://ciaracable.com">Ciara Cable</a>, used with permission.</p> -->
 
-    <p>Menu icons by  <a href="http://lunartemplates.com">Lunar Templates</a> and <a href="http://ffra.deviantart.com/">Fritz Franke</a>. These are licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons</a>.</p>
+    <p>Menu icons by  <a href="http://lunartemplates.com" target="_blank">Lunar Templates</a> and <a href="http://ffra.deviantart.com" target="_blank">Fritz Franke</a>. These are licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">Creative Commons</a>.</p>
 </div>
 
-<!-- this needs to be post-dom -->
-    <script type="text/javascript" src="toggle.js"></script>
 </body>
 </html>
