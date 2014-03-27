@@ -116,7 +116,7 @@ chrome.app.runtime.onLaunched.addListener(function(x) {
     }
   }
   var p = null, s = null, b = null, c = null, d = [], g = [];
-  chrome.app.window.create("polygon_test.html", {width:960, height:480, frame:"default"}, function(g) {
+  chrome.app.window.create("menu.html", {width:900, height:700, frame:"default"}, function(g) {
     c = g.contentWindow;
     b = c.document;
     c.onload = function() {
