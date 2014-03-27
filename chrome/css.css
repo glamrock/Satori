@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	background: #ffffff url('img/background2.jpg') top left fixed;
+	background: #fff url('img/background2.jpg') top left fixed;
     min-height:400px;
     margin: 10px;
     padding: none;
@@ -12,6 +12,12 @@ body {
 	font-family: Arial, Verdana, Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 1.5em; 
+}
+
+#can {
+    position: absolute;
+    background-image: url('img/background2.jpg') top left fixed;
+    
 }
 
 a, a:link { 
@@ -95,7 +101,7 @@ td.hash { /* sha */
     border-radius: 24px 24px 24px 24px;
     border: 0px;
     margin: 0 auto;
-    padding: 1px 20px 0 20px;
+    padding: 1px 20px 20px 20px;
     font-size: 20px;
 }
 
@@ -192,6 +198,11 @@ label { /* verification selector */
     width: 85px;
     margin: 10px 0 10px 0;
     cursor: pointer #ffffff;
+}
+
+label:after {
+    content: &#x25BC;
+
 }
 
 div#winsig pre {
