@@ -206,12 +206,6 @@ function animate() {
 var h = canvas.height;
 var img = new Image();
 
-img.src = "background2.jpg";
-img.onload = function () {
-    var pattern = ctx.createPattern(img, "repeat");
-    ctx.fillStyle = pattern;
-    ctx.fillRect(0, 0, w, h);
-};
 // end bg image
 
     c.fillStyle = "#3c3c3c";

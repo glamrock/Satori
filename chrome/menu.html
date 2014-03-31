@@ -4,12 +4,13 @@
     <script type="text/javascript" src="localization.js"></script>-->
 
     <script type="text/javascript" src="compiled.js"></script>
+    <script type="text/javascript" src="sizzle.js"></script>
+    <script type="text/javascript" src="lingua.js"></script>
     <link rel='stylesheet' type='text/css' href='css.css'/>
 </head>
 <body>
 
 <canvas id="can"></canvas>
-    <script type="text/javascript" src="sizzle.js"></script>
     <script type="text/javascript" src="polygon.js"></script>
 
 
@@ -19,13 +20,13 @@
     <h1><img src="img/download.png" />Download</h1>
 
 <!-- PROOF OF CONCEPT -->
-
+<!--
     <div lang="en" id="gib">
        <p><a href="https://clients2.google.com/service/update2/crx?response=redirect&x=id%3Ddajjbehmbnbppjkcnpdkaniapgdppdnc%26uc" download="concept.zip" class="button">Proof of concept (33kb)</a></p>
         <label for="sig0">verification</label>
         <input type="checkbox" id="sig0">
         <div id="winsig">
-            <p>68a8871de6c1263fab0415044f51c79a731e0568330dd953cf5f2cd64462a252 </p>
+            <p>68a8871de6c1263fab0415044f51c79a731e0568330dd953cf5f2cd64462a252 </p> </div>
     </div>
 
     <div lang="fa" id="linux">
@@ -33,27 +34,79 @@
         <label for="sigz">verification</label>
         <input type="checkbox" id="sigz">
         <div id="winsig">
-            <p>TBB (inner): 24cc37b2345666fb89708e364529bbe1ef52dabac59f8e140ffee430d2ce6696 </p>
+            <p>TBB (inner): 24cc37b2345666fb89708e364529bbe1ef52dabac59f8e140ffee430d2ce6696 </p></div>
     </div>
 
+-->
 
 <!-- download display -->
 
 <!-- ENGLISH -->
+<div class="lingua">English</div>
+<div class="lingua_dl"><!-- derp --></div>
+
 <!-- FARSI -->
+
+<div class="lingua">Farsi</div>
+<div class="lingua_dl"><!-- derp --></div>
+
 <!-- ARABIC -->
+
+<div class="lingua">Arabic</div>
+<div class="lingua_dl"><!-- derp --></div>
+
 <!-- CHINESE -->
+
+<div class="lingua">Chinese</div>
+<div class="lingua_dl"><!-- derp --></div>
+
 <!-- RUSSIAN -->
+
+<div class="lingua">Russian</div>
+<div class="lingua_dl"><!-- derp --></div>
+
 <!-- VIETNAMESE -->
+
+<div class="lingua">Vietnamese</div>
+<div class="lingua_dl"><!-- derp --></div>
+
 <!-- ITALIA! -->
+
+<div class="lingua">Italian</div>
+<div class="lingua_dl"><!-- derp --></div>
+
 <!-- SPANISH -->
+
+<div class="lingua">Spanish</div>
+<div class="lingua_dl"><!-- derp --></div>
+
 <!-- PORTUGUESE -->
+
+<div class="lingua">Portuguese</div>
+<div class="lingua_dl"><!-- derp --></div>
+
 <!-- POLISH -->
+
+<div class="lingua">Polish</div>
+<div class="lingua_dl"><!-- derp --></div>
+
 <!-- KOREAN -->
+
+<div class="lingua">Korean</div>
+<div class="lingua_dl"><!-- derp --></div>
+
 <!-- DUTCH -->
+
+<div class="lingua">Dutch</div>
+<div class="lingua_dl"><!-- derp --></div>
+
 <!-- GERMAN -->
 
-        <h1><img src="img/hash.png" />Generate Hash</h1>
+<div class="lingua">German</div>
+<div class="lingua_dl"><!-- derp --></div>
+
+
+        <div><img src="img/hash.png" />Generate Hash</div>
 
 <!-- initial screen for drag and dropping files -->
 <div id="hasher">
@@ -80,7 +133,7 @@
         <button id="hash" value='Sha256'></button>
         <progress id='progress' value='0'></progress>
     </div>
-        <div id="select">Select Files</div>
+<!--        <div id="select">Select Files</div> -->
 </div>
 
 
