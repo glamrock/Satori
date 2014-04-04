@@ -21,8 +21,12 @@ body {
     z-index: -1;
 }
 
-.download {
-    padding-left: 30px;
+#download {
+    padding-left: 50px;
+}
+
+#checksums {
+    padding-left: 50px;
 }
 
 /* language download selector */
@@ -87,6 +91,7 @@ h2 { font-size: 28px; padding: 10px 0 0 0; }
     padding: 10px;
     width: 110px;
     text-align: center;
+    margin-left: 50px;
 }
 
 #hashlist {
@@ -99,6 +104,10 @@ button#hash {
 
 progress {
     display:none;
+}
+
+table {
+    margin: 0 auto;
 }
 
 td.name { /* this is the file name display */
@@ -134,7 +143,7 @@ td.hash { /* sha */
 .item a { border-bottom: 0px; }
 
 #credits {
-    width: 700px;
+    width: 714px;
     font-size: 13px;
     background-color: rgba(255,255,255,0.3);
     border-radius: 24px 24px 24px 24px;
