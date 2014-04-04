@@ -21,7 +21,11 @@ body {
     z-index: -1;
 }
 
-/* language selector */
+.download {
+    padding-left: 30px;
+}
+
+/* language download selector */
 .lingua {
     cursor: pointer;
     padding: 5px;
@@ -98,17 +102,21 @@ progress {
 }
 
 td.name { /* this is the file name display */
-    font-size: 12px; 
-    max-width: 150px;
+    font-size: 13px; 
+    max-width: 200px;
     color: #ED4B8F; /* pink */
     border-bottom: 1px solid;
+    padding-right: 5px;
 }
 
 td.hash { /* sha */
-    font-size: 13px;
+    font-size: 15px;
+    width: 500px;
     color: #95B1DC; /*faded light blue */
     border-bottom: 1px solid;
+    padding-left: 5px;
 }
+
 
 #menu {
     width: 700px;
