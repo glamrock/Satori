@@ -41,6 +41,41 @@ body {
 }
 /* end language selector */
 
+/* download lists */
+
+#dlselect {
+    margin-right: 50px;
+}
+
+#dlselect ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#dlselect a {
+    display: block;
+    color: #FFF;
+    padding: 3px 12px 3px 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#dlselect a:hover {
+    background-color: rgba(0,0,0,0.4);
+    color: #FFF;
+}
+
+#dlselect li li a {
+    display: block;
+    color: #FFF;
+    padding: 3px 3px 3px 24px;
+    text-decoration: none;
+    font-weight: normal;
+    border-bottom: 1px dotted rgba(0,0,0,0.5);
+}
+
+/* end download lists */
 
 a, a:link { 
 	color: #0C8794; /* blue */
