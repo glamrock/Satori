@@ -66,19 +66,17 @@ body {
 }
 
 #dlselect a {
-    display: block;
-    color: #FFF;
-    padding: 3px 12px 3px 8px;
+    padding: 3px 3px 3px 3px;
     text-decoration: none;
-    font-weight: bold;
+    border: none;
 }
 
-#dlselect a:hover {
+#dlselect li li:hover {
     background-color: rgba(0,0,0,0.4);
     color: #FFF;
 }
 
-#dlselect li li a {
+#dlselect li li {
     display: block;
     color: #FFF;
     padding: 3px 3px 3px 3px;
@@ -122,6 +120,13 @@ h1 { font-size: 34px; padding: 5px 0 0 0; }
 
 h2 { font-size: 28px; padding: 10px 0 0 0; }
 
+a.grey {
+    color: #444444;
+}
+
+.grey {
+    color: #444444;
+}
 
 /* verification section */
 
