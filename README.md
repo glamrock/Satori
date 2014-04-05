@@ -23,12 +23,6 @@ This software is currently ***alpha***.
 Artistic License 2.0, a [supervillain-friendly](http://i.imgur.com/1xV099o.jpg) license.
 
 ###Thanks
-**Music**
-* *Black Marble*'s "A Different Arrangement"
-* *She Wants Revenge* discography
-* *Lincoln County Historical Society* "Die Bastards"
-* *St. Vincent* "Actors" & "St. Vincent"
-* *Thomas Azier* "Hylas 002"
 
 **People**<br>
 Many thanks to all of the people who gave feedback, particularly David Fifield, who found several annoying issues with an early version. (And who has seriously *legit* musical taste).
@@ -36,6 +30,14 @@ Many thanks to all of the people who gave feedback, particularly David Fifield, 
 And as always, thanks to those who *must* remain anonymous, for taking the time to test against filters and give usability feedback. :love_letter:
 
 Also thanks to Redacted, for answering my question about SHA256sum checking at LibrePlanet. Truly, your help has been redacted redacted.  Redacted!
+
+**Music**
+* *Black Marble* "A Different Arrangement"
+* *She Wants Revenge* discography
+* *Lincoln County Historical Society* "Die Bastards"
+* *St. Vincent* "Actors" & "St. Vincent"
+* *Thomas Azier* "Hylas 002" & "Verwandlung" EPs
+* *Au Revoir Simone* "Still Night, Still Light"
 
 **Credits**
     <!-- Not sure if going to use this <p>Bubble heart icon by <a href="http://ciaracable.com">Ciara Cable</a>, used with permission.</p> -->
