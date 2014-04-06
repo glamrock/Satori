@@ -40,7 +40,7 @@ Also thanks to Redacted, for answering my question about SHA256sum checking at L
 * *Au Revoir Simone* "Still Night, Still Light"
 
 **Credits**
-Polygon script by <a href="http://codepen.io/Wryte/details/qKgGd" target="_blank">Wryte</a>, used with permission. Download icons by  <a href="http://lunartemplates.com" target="_blank">Lunar Templates</a> and OS/etc icons by <a href="http://ffra.deviantart.com" target="_blank">Fritz Franke</a> <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">(license)</a>.
+Polygon script by <a href="http://codepen.io/Wryte/details/qKgGd" target="_blank">Wryte</a>, used with <a href="https://twitter.com/Craigstra/status/448976757836619776"> permission</a>.
 
 ###[Contact](https://github.com/glamrock/contact)
 griffin [@](at) cryptolab.net
