@@ -14,6 +14,10 @@ body {
 	line-height: 1.5em; 
 }
 
+*:select{
+    text-shadow: none;
+}
+
 #can {
     margin: 0;
     position:fixed; top:0;left:0;
@@ -191,6 +195,10 @@ td.hash { /* sha */
     z-index: 5;
 }
 
+#bridges{
+    text-align: center;
+}
+
 .item { padding: 10px; height: 50px; line-height: 50px;}
 .item p { line-height: 48px;}
 .item a { border-bottom: 0px; }
@@ -305,6 +313,12 @@ div#winsig, div#linuxsig, div#macsig {
     font-size: 14px;
     background-color: rgba(0,0,0,0.3);
     text-shadow: none;
+}
+
+#winsig input {
+    border: none;
+    background: transparent;
+    color: #888;
 }
 
 /* onclick/shown */
