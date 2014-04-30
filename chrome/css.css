@@ -294,18 +294,20 @@ label { /* verification selector */
     cursor: pointer #ffffff;
 }
 
+/* down arrow after checksum */
 label:after {
     content: &#x25BC;
+    color: #ffffff;
 
 }
 
-div#winsig pre {
+div#sig pre {
     background: #EDE5E2; /* light grey */
 
 }
 
 /* hidden/default */
-div#winsig, div#linuxsig, div#macsig {
+div#sig {
     background: #EDE5E2; /* light grey */
     color: #ffffff; /*off-black*/
     text-align: center;
@@ -315,21 +317,16 @@ div#winsig, div#linuxsig, div#macsig {
     text-shadow: none;
 }
 
-#winsig input {
+#sig input {
     border: none;
     background: transparent;
     color: #888;
+    width: 100%;
+    height: auto;
+    text-align: center;
 }
 
 /* onclick/shown */
-input[type=checkbox]:checked ~ div#winsig {
-   display:block;
-}
-
-input[type=checkbox]:checked ~ div#linuxsig {
-   display:block;
-}
-
-input[type=checkbox]:checked ~ div#macsig {
+input[type=checkbox]:checked ~ div#sig {
    display:block;
 }
