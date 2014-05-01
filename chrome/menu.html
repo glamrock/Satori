@@ -6,6 +6,7 @@
     <script type="text/javascript" src="compiled.js"></script>
     <script type="text/javascript" src="sizzle.js"></script>
     <script type="text/javascript" src="lingua.js"></script>
+    <script type="text/javascript" src="bridges.js"></script>
     <link rel='stylesheet' type='text/css' href='css.css'/>
 </head>
 <body>
@@ -19,25 +20,6 @@
     <div id="logo"></div>
     <h1><img src="img/download.png" />Download</h1>
 
-<!-- PROOF OF CONCEPT -->
-<!--
-    <div lang="en" id="gib">
-       <p><a href="https://clients2.google.com/service/update2/crx?response=redirect&x=id%3Ddajjbehmbnbppjkcnpdkaniapgdppdnc%26uc" download="concept.zip" class="button">Proof of concept (33kb)</a></p>
-        <label for="sig0">verification</label>
-        <input type="checkbox" id="sig0">
-        <div id="sig">
-            <p>68a8871de6c1263fab0415044f51c79a731e0568330dd953cf5f2cd64462a252 </p> </div>
-    </div>
-
-    <div lang="fa" id="linux">
-       <p><a href="https://clients2.google.com/service/update2/crx?response=redirect&x=id%3Dhjfkbpefmgkocdhjaobhoeflddiniogk%26uc" download="linux32-fa.zip" class="button">Proof of concept (with TBB - 25mb)</a></p>
-        <label for="sigz">verification</label>
-        <input type="checkbox" id="sigz">
-        <div id="sig">
-            <p>TBB (inner): 24cc37b2345666fb89708e364529bbe1ef52dabac59f8e140ffee430d2ce6696 </p></div>
-    </div>
-
--->
 
 <!-- download display -->
 
@@ -46,60 +28,110 @@
     <div class="lingua">English</div>
     <div class="lingua_dl"><!-- derp -->
 
-
         <div id="dlselect">
         <ul>
         <li class="os">Windows
            <ul>
-           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_en-US.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_en-US.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_en-US.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_en-US.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
             <label for="entbbwin">checksum</label>
             <input type="checkbox" id="entbbwin">
             <div id="sig"><input value="eeeeeeeee"></div>
            </li>
 
-           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
             <label for="engpg4win">checksum</label>
             <input type="checkbox" id="engpg4win">
             <div id="sig"><input value="eeeeeeeee"></div>
            </li>
 
-           <li>Thunderbird v24.4.0 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Thunderbird v24.4 <a href="https://s3-us-west-2.amazonaws.com/satori2/thunderbird-24.4.0-en.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/thunderbird-24.4.0-en.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
             <label for="tbirdensig">checksum</label>
             <input type="checkbox" id="tbirdensig">
             <div id="sig"><input value=""></div>
-
            </li>
 
-           <li><a class="grey">Torbirdy add-on for Thunderbird</a></li>
-           <li><a class="grey">Enigmail add-on for Thunderbird</a></li>
+           <li>Torbirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/torbirdy.xpi" title="Download from Github" target="_blank">B</a>
+            <label for="torbirdysig">checksum</label>
+            <input type="checkbox" id="torbirdysig">
+            <div id="sig"><input value="5d371242af55caaace01ddbbb437d5b746c17491de6f2c989fac35916582c94c"></div>
+           </li>
+
+           <li>Enigmail add-on for Thunderbird (v1.6) <a href="https://s3-us-west-2.amazonaws.com/satori2/enigmail.xpi" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/enigmail.xpi" title="Download from Github" target="_blank">B</a>
+            <label for="enigsig">checksum</label>
+            <input type="checkbox" id="enigsig">
+            <div id="sig"><input value="fb39cfa2af798373f19cd61b6800d880477255031c93a933cad9f588afe36e6a"></div>
+           </li>
+
            </ul>
         </li>
         <li class="os">Linux
            <ul>
-           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_en-US.tar.xz" download="tor_browser_bundle.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_en-US.tar.xz" download="tor_browser_bundle.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_en-US.tar.xz" download="tor_browser_bundle.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_en-US.tar.xz" download="tor_browser_bundle.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="entbblin32">checksum</label>
         <input type="checkbox" id="entbblin32">
         <div id="sig">
             <input value="derp"></div>
             </li>
 
-           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_en-US.tar.xz" download="tor_browser_bundle.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_en-US.tar.xz" download="tor_browser_bundle.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_en-US.tar.xz" download="tor_browser_bundle.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_en-US.tar.xz" download="tor_browser_bundle.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="entbblin64">checksum</label>
         <input type="checkbox" id="entbblin64">
         <div id="sig">
             <input value="derp"></div>
             </li>
+
+           <li>Thunderbird v24.4 <!--<a href="https://s3-us-west-2.amazonaws.com/satori2/thunderbird-24.4.0-en.tar.bz2" download="thunderbird244.tar.bz2" title="Download from Amazon S2" target="_blank">A</a>--><a href="https://github.com/glamrock/satori-bin/blob/v1/thunderbird-24.4.0-en.tar.bz2" download="thunderbird244.tar.bz2" title="Download from Github" target="_blank">B</a>
+            <label for="tbirdenlinuxsig">checksum</label>
+            <input type="checkbox" id="tbirdenlinuxsig">
+            <div id="sig"><input value=""></div>
+           </li>
+
+           <li>Torbirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/torbirdy.xpi" title="Download from Github" target="_blank">B</a>
+            <label for="torbirdysig">checksum</label>
+            <input type="checkbox" id="torbirdysig">
+            <div id="sig"><input value="5d371242af55caaace01ddbbb437d5b746c17491de6f2c989fac35916582c94c"></div>
+           </li>
+
+           <li>Enigmail add-on for Thunderbird (v1.6) <a href="https://s3-us-west-2.amazonaws.com/satori2/enigmail.xpi" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/enigmail.xpi" title="Download from Github" target="_blank">B</a>
+            <label for="enigsig">checksum</label>
+            <input type="checkbox" id="enigsig">
+            <div id="sig"><input value="fb39cfa2af798373f19cd61b6800d880477255031c93a933cad9f588afe36e6a"></div>
+           </li>
+
            <li><a class="grey" href="https://github.com/agl/pond">Pond (not available at this time)</a></li>
            </ul>
         </li>
-        <li class="os">Tails
+<!--        <li class="os">Tails
            <ul>
            <li><a class="grey">Tails Live USB</a></li>
            </ul>
-        </li>
+        </li> -->
         <li class="os">Mac
            <ul>
-           <li><a class="grey">Tor Browser Bundle v3.5.4</a></li>
+           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_en-US.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_en-US.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
+            <label for="entbbwin">checksum</label>
+            <input type="checkbox" id="entbbwin">
+            <div id="sig"><input value="eeeeeeeee"></div>
+           </li>
+
+           <li>Thunderbird v24.4 <!--<a href="https://s3-us-west-2.amazonaws.com/satori2/thunderbird-24.4.0-en.tar.bz2" download="thunderbird244.tar.bz2" title="Download from Amazon S2" target="_blank">A</a>--><a href="https://github.com/glamrock/satori-bin/blob/v1/thunderbird-24.4.0-en.tar.bz2" download="thunderbird244.tar.bz2" title="Download from Github" target="_blank">B</a>
+            <label for="tbirdenosxsig">checksum</label>
+            <input type="checkbox" id="tbirdenosxsig">
+            <div id="sig"><input value=""></div>
+           </li>
+
+           <li>Torbirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/torbirdy.xpi" title="Download from Github" target="_blank">B</a>
+            <label for="torbirdysig">checksum</label>
+            <input type="checkbox" id="torbirdysig">
+            <div id="sig"><input value="5d371242af55caaace01ddbbb437d5b746c17491de6f2c989fac35916582c94c"></div>
+           </li>
+
+           <li>Enigmail add-on for Thunderbird (v1.6) <a href="https://s3-us-west-2.amazonaws.com/satori2/enigmail.xpi" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/enigmail.xpi" title="Download from Github" target="_blank">B</a>
+            <label for="enigsig">checksum</label>
+            <input type="checkbox" id="enigsig">
+            <div id="sig"><input value="fb39cfa2af798373f19cd61b6800d880477255031c93a933cad9f588afe36e6a"></div>
+           </li>
+
            </ul>
         </li>
         <li class="os">Android
@@ -125,13 +157,13 @@
         <ul>
         <li class="os">Windows
            <ul>
-           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_fa.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_fa.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_fa.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_fa.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
             <label for="fatbbwin">checksum</label>
             <input type="checkbox" id="fatbbwin">
             <div id="sig"><p></p></div>
            </li>
 
-           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
             <label for="engpg4win">checksum</label>
             <input type="checkbox" id="engpg4win">
             <div id="sig"><input value="eeeeeeeee"></div>
@@ -146,14 +178,14 @@
         </li>
         <li class="os">Linux
            <ul>
-           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_fa.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_fa.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_fa.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_fa.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="fatbblin32">checksum</label>
         <input type="checkbox" id="fatbblin32">
         <div id="sig">
             <input value="derp"></div>
         </li>
 
-           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_fa.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_fa.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_fa.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_fa.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="fatbblin64">checksum</label>
         <input type="checkbox" id="fatbblin64">
         <div id="sig">
@@ -196,13 +228,13 @@
         <ul>
         <li class="os">Windows
            <ul>
-           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_ar.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_ar.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_ar.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_ar.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
             <label for="artbbwin">checksum</label>
             <input type="checkbox" id="artbbwin">
             <div id="sig"><p></p></div>
            </li>
 
-           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
             <label for="engpg4win">checksum</label>
             <input type="checkbox" id="engpg4win">
             <div id="sig"><input value="eeeeeeeee"></div>
@@ -217,14 +249,14 @@
         </li>
         <li class="os">Linux
            <ul>
-           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_ar.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_ar.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_ar.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_ar.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="artbblin32">checksum</label>
         <input type="checkbox" id="artbblin32">
         <div id="sig">
             <input value="derp"></div>
         </li>
 
-           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_ar.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_ar.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_ar.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_ar.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="artbblin64">checksum</label>
         <input type="checkbox" id="artbblin64">
         <div id="sig">
@@ -266,16 +298,16 @@
         <ul>
         <li class="os">Windows
            <ul>
-           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_zh-CN.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_zh-CN.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_zh-CN.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_zh-CN.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
             <label for="zhtbbwin">checksum</label>
             <input type="checkbox" id="zhtbbwin">
             <div id="sig"><p></p></div>
            </li>
 
-           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
             <label for="engpg4win">checksum</label>
             <input type="checkbox" id="engpg4win">
-            <div id="sig"><input value="eeeeeeeee"></div>
+            <div id="sig"><input value="9e45d97fd2a79435e9b89dc10781ab3f3c12a0f9571904b2f36ae10137a1243d"></div>
            </li>
 
            <li><a class="grey">Thunderbird is not available in Farsi</a>
@@ -287,14 +319,14 @@
         </li>
         <li class="os">Linux
            <ul>
-           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_zh-CN.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_zh-CN.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_zh-CN.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_zh-CN.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="zhtbblin32">checksum</label>
         <input type="checkbox" id="zhtbblin32">
         <div id="sig">
             <input value="derp"></div>
         </li>
 
-           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_zh-CN.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_zh-CN.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_zh-CN.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_zh-CN.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="zhtbblin64">checksum</label>
         <input type="checkbox" id="zhtbblin64">
         <div id="sig">
@@ -337,16 +369,16 @@
         <ul>
         <li class="os">Windows
            <ul>
-           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_ru.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_ru.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_ru.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_ru.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
             <label for="rutbbwin">checksum</label>
             <input type="checkbox" id="rutbbwin">
             <div id="sig"><p></p></div>
            </li>
 
-           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
             <label for="engpg4win">checksum</label>
             <input type="checkbox" id="engpg4win">
-            <div id="sig"><input value="eeeeeeeee"></div>
+            <div id="sig"><input value="9e45d97fd2a79435e9b89dc10781ab3f3c12a0f9571904b2f36ae10137a1243d"></div>
            </li>
 
            <li><a class="grey">Thunderbird is not available in Farsi</a>
@@ -358,14 +390,14 @@
         </li>
         <li class="os">Linux
            <ul>
-           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_ru.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_ru.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_ru.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_ru.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="rutbblin32">checksum</label>
         <input type="checkbox" id="rutbblin32">
         <div id="sig">
             <input value="derp"></div>
         </li>
 
-           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_ru.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_ru.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_ru.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_ru.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="rutbblin64">checksum</label>
         <input type="checkbox" id="rutbblin64">
         <div id="sig">
@@ -398,9 +430,9 @@
         </div>
     </div>
 
-    <!-- VIETNAMESE -->
+   <!-- CATALAN -->
 
-    <div class="lingua">Vietnamese</div>
+    <div class="lingua">Catal&#224;</div>
     <div class="lingua_dl"><!-- derp -->
 
 
@@ -408,16 +440,16 @@
         <ul>
         <li class="os">Windows
            <ul>
-           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_vi.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_vi.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Thunderbird v24.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_vi.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/thunderbird-24.4.0-cat.exe" download="thunderbird-24.exe" title="Download from Github" target="_blank">B</a>
             <label for="vitbbwin">checksum</label>
             <input type="checkbox" id="vitbbwin">
             <div id="sig"><p></p></div>
            </li>
 
-           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
             <label for="engpg4win">checksum</label>
             <input type="checkbox" id="engpg4win">
-            <div id="sig"><input value="eeeeeeeee"></div>
+            <div id="sig"><input value="9e45d97fd2a79435e9b89dc10781ab3f3c12a0f9571904b2f36ae10137a1243d"></div>
            </li>
 
            <li><a class="grey">Thunderbird is not available in Farsi</a>
@@ -429,14 +461,14 @@
         </li>
         <li class="os">Linux
            <ul>
-           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_vi.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_vi.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_vi.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_vi.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="vitbblin32">checksum</label>
         <input type="checkbox" id="vitbblin32">
         <div id="sig">
             <input value="derp"></div>
         </li>
 
-           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_vi.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_vi.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_vi.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_vi.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="vitbblin64">checksum</label>
         <input type="checkbox" id="vitbblin64">
         <div id="sig">
@@ -468,9 +500,9 @@
         </ul>
         </div>
     </div>
-    <!-- ITALIA! -->
+    <!-- VIETNAMESE -->
 
-    <div class="lingua">Italiano</div>
+    <div class="lingua">Vietnamese</div>
     <div class="lingua_dl"><!-- derp -->
 
 
@@ -478,16 +510,16 @@
         <ul>
         <li class="os">Windows
            <ul>
-           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_it.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_it.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
-            <label for="itbbwin">checksum</label>
-            <input type="checkbox" id="itbbwin">
+           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_vi.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_vi.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
+            <label for="vitbbwin">checksum</label>
+            <input type="checkbox" id="vitbbwin">
             <div id="sig"><p></p></div>
            </li>
 
-           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
             <label for="engpg4win">checksum</label>
             <input type="checkbox" id="engpg4win">
-            <div id="sig"><input value="eeeeeeeee"></div>
+            <div id="sig"><input value="9e45d97fd2a79435e9b89dc10781ab3f3c12a0f9571904b2f36ae10137a1243d"></div>
            </li>
 
            <li><a class="grey">Thunderbird is not available in Farsi</a>
@@ -499,14 +531,86 @@
         </li>
         <li class="os">Linux
            <ul>
-           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_it.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_it.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_vi.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_vi.tar.xz" title="Download from Github" target="_blank">B</a>
+        <label for="vitbblin32">checksum</label>
+        <input type="checkbox" id="vitbblin32">
+        <div id="sig">
+            <input value="derp"></div>
+        </li>
+
+           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_vi.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_vi.tar.xz" title="Download from Github" target="_blank">B</a>
+        <label for="vitbblin64">checksum</label>
+        <input type="checkbox" id="vitbblin64">
+        <div id="sig">
+            <input value="derp"></div>
+        </li>
+
+           </ul>
+        </li>
+        <li class="os">Tails
+           <ul>
+           <li><a class="grey">Tails Live USB</a></li>
+           </ul>
+        </li>
+        <li class="os">Mac
+           <ul>
+           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/osx/TorBrowserBundle-3.5.4-osx32_vi.zip" title="Download from Amazon S2" target="_blank">A</a><a href="" title="Download from Github" target="_blank">B</a>
+        <label for="vitbbosx">checksum</label>
+        <input type="checkbox" id="vitbbosx">
+        <div id="sig">
+            <input value="derp"></div>
+</li>
+           </ul>
+        </li>
+
+        <li class="os">Firefox
+           <ul>
+           </ul>
+        </li>
+        </ul>
+        </div>
+    </div>
+
+
+    <!-- ITALIA! -->
+
+    <div class="lingua">Italiano</div>
+    <div class="lingua_dl"><!-- derp -->
+
+
+        <div id="dlselect">
+        <ul>
+        <li class="os">Windows
+           <ul>
+           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_it.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_it.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
+            <label for="itbbwin">checksum</label>
+            <input type="checkbox" id="itbbwin">
+            <div id="sig"><p></p></div>
+           </li>
+
+           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
+            <label for="engpg4win">checksum</label>
+            <input type="checkbox" id="engpg4win">
+            <div id="sig"><input value="9e45d97fd2a79435e9b89dc10781ab3f3c12a0f9571904b2f36ae10137a1243d"></div>
+           </li>
+
+           <li><a class="grey">Thunderbird is not available in Farsi</a>
+           </li>
+
+           <li><a class="grey">Torbirdy add-on for Thunderbird (English)</a></li>
+           <li><a class="grey">Enigmail add-on for Thunderbird (English)</a></li>
+           </ul>
+        </li>
+        <li class="os">Linux
+           <ul>
+           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_it.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_it.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="itbblin32">checksum</label>
         <input type="checkbox" id="itbblin32">
         <div id="sig">
             <input value="derp"></div>
         </li>
 
-           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_it.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_it.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_it.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_it.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="itbblin64">checksum</label>
         <input type="checkbox" id="itbblin64">
         <div id="sig">
@@ -548,13 +652,13 @@
         <ul>
         <li class="os">Windows
            <ul>
-           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_es-ES.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_es-ES.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_es-ES.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_es-ES.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
             <label for="estbbwin">checksum</label>
             <input type="checkbox" id="estbbwin">
             <div id="sig"><p></p></div>
            </li>
 
-           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
             <label for="engpg4win">checksum</label>
             <input type="checkbox" id="engpg4win">
             <div id="sig"><input value="eeeeeeeee"></div>
@@ -569,14 +673,14 @@
         </li>
         <li class="os">Linux
            <ul>
-           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_es-ES.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_es-ES.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_es-ES.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_es-ES.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="estbblin32">checksum</label>
         <input type="checkbox" id="estbblin32">
         <div id="sig">
             <input value="derp"></div>
         </li>
 
-           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_es-ES.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_es-ES.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_es-ES.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_es-ES.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="estbblin64">checksum</label>
         <input type="checkbox" id="estbblin64">
         <div id="sig">
@@ -618,13 +722,13 @@
         <ul>
         <li class="os">Windows
            <ul>
-           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_pt-PT.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_pt-PT.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_pt-PT.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_pt-PT.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
             <label for="pttbbwin">checksum</label>
             <input type="checkbox" id="pttbbwin">
             <div id="sig"><p></p></div>
            </li>
 
-           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
             <label for="engpg4win">checksum</label>
             <input type="checkbox" id="engpg4win">
             <div id="sig"><input value="eeeeeeeee"></div>
@@ -639,14 +743,14 @@
         </li>
         <li class="os">Linux
            <ul>
-           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_pt-PT.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_pt-PT.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_pt-PT.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_pt-PT.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="pttbblin32">checksum</label>
         <input type="checkbox" id="pttbblin32">
         <div id="sig">
             <input value="derp"></div>
         </li>
 
-           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_pt-PT.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_pt-PT.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_pt-PT.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_pt-PT.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="pttbblin64">checksum</label>
         <input type="checkbox" id="pttbblin64">
         <div id="sig">
@@ -688,13 +792,13 @@
         <ul>
         <li class="os">Windows
            <ul>
-           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_pl.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_pl.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_pl.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_pl.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
             <label for="pltbbwin">checksum</label>
             <input type="checkbox" id="pltbbwin">
             <div id="sig"><p></p></div>
            </li>
 
-           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
             <label for="engpg4win">checksum</label>
             <input type="checkbox" id="engpg4win">
             <div id="sig"><input value="eeeeeeeee"></div>
@@ -709,14 +813,14 @@
         </li>
         <li class="os">Linux
            <ul>
-           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_pl.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_pl.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_pl.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_pl.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="pltbblin32">checksum</label>
         <input type="checkbox" id="pltbblin32">
         <div id="sig">
             <input value="derp"></div>
         </li>
 
-           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_pl.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_pl.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_pl.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_pl.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="pltbblin64">checksum</label>
         <input type="checkbox" id="pltbblin64">
         <div id="sig">
@@ -759,13 +863,13 @@
         <ul>
         <li class="os">Windows
            <ul>
-           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_ko.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_ko.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_ko.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_ko.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
             <label for="kotbbwin">checksum</label>
             <input type="checkbox" id="kotbbwin">
             <div id="sig"><p></p></div>
            </li>
 
-           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
             <label for="engpg4win">checksum</label>
             <input type="checkbox" id="engpg4win">
             <div id="sig"><input value="eeeeeeeee"></div>
@@ -780,14 +884,14 @@
         </li>
         <li class="os">Linux
            <ul>
-           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_ko.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_ko.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_ko.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_ko.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="kotbblin32">checksum</label>
         <input type="checkbox" id="kotbblin32">
         <div id="sig">
             <input value="derp"></div>
         </li>
 
-           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_ko.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_ko.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_ko.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_ko.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="kotbblin64">checksum</label>
         <input type="checkbox" id="kotbblin64">
         <div id="sig">
@@ -830,13 +934,13 @@
         <ul>
         <li class="os">Windows
            <ul>
-           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_fr.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_fr.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_fr.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_fr.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
             <label for="frtbbwin">checksum</label>
             <input type="checkbox" id="frtbbwin">
             <div id="sig"><p></p></div>
            </li>
 
-           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
             <label for="engpg4win">checksum</label>
             <input type="checkbox" id="engpg4win">
             <div id="sig"><input value="eeeeeeeee"></div>
@@ -851,14 +955,14 @@
         </li>
         <li class="os">Linux
            <ul>
-           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_fr.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_fr.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_fr.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_fr.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="frtbblin32">checksum</label>
         <input type="checkbox" id="frtbblin32">
         <div id="sig">
             <input value="derp"></div>
         </li>
 
-           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_fr.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_fr.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_fr.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_fr.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="frtbblin64">checksum</label>
         <input type="checkbox" id="frtbblin64">
         <div id="sig">
@@ -902,13 +1006,13 @@
         <ul>
         <li class="os">Windows
            <ul>
-           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_nl.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_nl.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_nl.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_nl.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
             <label for="nltbbwin">checksum</label>
             <input type="checkbox" id="nltbbwin">
             <div id="sig"><p></p></div>
            </li>
 
-           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
             <label for="engpg4win">checksum</label>
             <input type="checkbox" id="engpg4win">
             <div id="sig"><input value="eeeeeeeee"></div>
@@ -923,14 +1027,14 @@
         </li>
         <li class="os">Linux
            <ul>
-           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_nl.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_nl.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_nl.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_nl.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="nltbblin32">checksum</label>
         <input type="checkbox" id="nltbblin32">
         <div id="sig">
             <input value="derp"></div>
         </li>
 
-           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_nl.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_nl.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_nl.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_nl.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="nltbblin64">checksum</label>
         <input type="checkbox" id="nltbblin64">
         <div id="sig">
@@ -973,13 +1077,13 @@
         <ul>
         <li class="os">Windows
            <ul>
-           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_de.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_de.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.5.4_de.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.5.4_de.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
             <label for="detbbwin">checksum</label>
             <input type="checkbox" id="detbbwin">
             <div id="sig"><p></p></div>
            </li>
 
-           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
             <label for="engpg4win">checksum</label>
             <input type="checkbox" id="engpg4win">
             <div id="sig"><input value="eeeeeeeee"></div>
@@ -994,14 +1098,14 @@
         </li>
         <li class="os">Linux
            <ul>
-           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_de.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_de.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.5.4_de.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.5.4_de.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="detbblin32">checksum</label>
         <input type="checkbox" id="detbblin32">
         <div id="sig">
             <input value="derp"></div>
         </li>
 
-           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_de.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_de.tar.xz" title="Download from Github" target="_blank">B</a><a class="grey">C</a>
+           <li>Tor Browser Bundle v3.5.4 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.5.4_de.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.5.4_de.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="detbblin64">checksum</label>
         <input type="checkbox" id="detbblin64">
         <div id="sig">
@@ -1040,7 +1144,7 @@
 <!-- END OF LANGUAGE -->
 
 
-<div><img src="img/hash.png" />Generate Hash</div>
+<h1>Generate Hash</h1>
 
 <!-- initial screen for drag and dropping files -->
 <div id="hasher">
@@ -1070,15 +1174,20 @@
         <div id="select">Select Files</div>
 </div>
 
-<!-- MIND THE GAP -->
-<div id="bridges"><h1>Here is a fresh bridge.</h1>
-        <div id="rando_bridge"></div>
-     <a id="bridger">Click to get another.</a>
+</div>
+</div>
 </div>
 
+
+<!-- MIND THE GAP -->
+<div id="bridges">
+<h2>Here is a fresh bridge.</h2>
+        <div class="bridge"></div>
+
+        <div class="howto"></div>
 </div>
-</div>
-</div>
+
+
 <!-- credits -->
 <div id="credits">
     <p>Made with love by <a href="https://twitter.com/abditum">Griffin</a>. He likes experimental music and surrealism.  While Satori distributes free software, it is not affiliated with or endorsed by the Tor Project, Guardian Project, EFF, or others.</p>
@@ -1086,7 +1195,7 @@
 
     <!-- Not sure if going to use this <p>Bubble heart icon by <a href="http://ciaracable.com">Ciara Cable</a>, used with permission.</p> -->
 
-    <p>Polygon script by <a href="http://codepen.io/Wryte/details/qKgGd" target="_blank">Wryte</a>. Download icons by  <a href="http://lunartemplates.com" target="_blank">Lunar Templates</a>. Software licenses are available</p>
+    <p>Polygon script by <a href="http://codepen.io/Wryte/details/qKgGd" target="_blank">Wryte</a>. Download icons by  <a href="http://lunartemplates.com" target="_blank">Lunar Templates</a>. Software licenses are available on the <a href="https://github.com/glamrock/satori">Github repo</a>.</p>
 </div>
 </body>
 </html>

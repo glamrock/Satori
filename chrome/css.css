@@ -195,10 +195,6 @@ td.hash { /* sha */
     z-index: 5;
 }
 
-#bridges{
-    text-align: center;
-}
-
 .item { padding: 10px; height: 50px; line-height: 50px;}
 .item p { line-height: 48px;}
 .item a { border-bottom: 0px; }
@@ -223,57 +219,103 @@ td.hash { /* sha */
     border-bottom: 1px solid #386178;
     text-shadow: none;
 }
+/* BRIDGES */
 
-/* BUTTON CRAZINESS BELOW */
-
-/* centered because of RTL text, elseways this could get pretty crazy */
-.button {
-	-moz-box-shadow:inset 0px 1px 0px 0px #d197fe;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #d197fe;
-	box-shadow:inset 0px 1px 0px 0px #d197fe;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a53df6), color-stop(1, #7c16cb) );
-	background:-moz-linear-gradient( center top, #a53df6 5%, #7c16cb 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a53df6', endColorstr='#7c16cb');
-	background-color:#a53df6;
-	-webkit-border-top-left-radius:7px;
-	-moz-border-radius-topleft:7px;
-	border-top-left-radius:7px;
-	-webkit-border-top-right-radius:7px;
-	-moz-border-radius-topright:7px;
-	border-top-right-radius:7px;
-	-webkit-border-bottom-right-radius:7px;
-	-moz-border-radius-bottomright:7px;
-	border-bottom-right-radius:7px;
-	-webkit-border-bottom-left-radius:7px;
-	-moz-border-radius-bottomleft:7px;
-	border-bottom-left-radius:7px;
-	text-indent:0;
-	border:1px solid #9c33ed;
-	display:inline-block;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:16px;
-	font-weight:normal;
-	font-style:normal;
-	height:40px;
-	line-height:40px;
-    padding-right: 7px;
-    padding-left: 7px;
-	text-decoration:none;
-	text-align:center;
-	text-shadow:1px 1px 0px #7d15cd;
+#bridges{
+    text-align: center;
+    width: 700px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 24px 24px 24px 24px;
+    border: 0px;
+    margin: 0 auto;
+    margin-top: 12px;
+    padding: 1px 20px 20px 20px;
+    font-size: 20px;
+    z-index: 5;
 }
 
-.button:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #7c16cb), color-stop(1, #a53df6) );
-	background:-moz-linear-gradient( center top, #7c16cb 5%, #a53df6 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7c16cb', endColorstr='#a53df6');
-	background-color:#7c16cb;
-}.button:active {
-	position:relative;
-	top:1px;
+.bridge {}
+input.getacross {
+    background: transparent; 
+    color: #ffffff; 
+    width: 550px; 
+    border: 0px solid #000; 
+    text-align:center;
 }
 
+/* TOOLTIP */
+
+
+    a.tooltip {outline:none;text-decoration:none;border-bottom:dotted 1px blue;}
+    a.tooltip strong {line-height:30px;}
+    a.tooltip > span 
+    {
+        width:200px;
+        padding: 10px 20px;
+        margin-top: 20px;
+        margin-left: -85px;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 10;       
+        position: absolute;
+
+        font-family: Arial;
+        font-size: 12px;
+        font-style: normal;  
+        
+        border-radius: 3px;
+
+        box-shadow: 2px 2px 2px #999;       
+
+        transition-property:opacity, margin-top, visibility, margin-left;
+        transition-duration:0.4s, 0.3s, 0.4s, 0.3s;  
+        transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+    }
+    
+    /*a.tooltip > span:hover,*/
+    a.tooltip:hover > span
+    {
+        opacity: 1;
+        text-decoration:none;
+        visibility: visible;
+        overflow: visible;
+        margin-top:50px;
+        display: inline;
+        margin-left: -60px;     
+    }
+
+    a.tooltip span b {
+    
+        width: 15px;
+        height: 15px;
+        margin-left: 20px;
+        margin-top: -19px;
+            
+        display: block;
+        position: absolute;
+        transform: rotate(-45deg);
+        box-shadow: inset 0 1px 0 #fff;
+            
+        display: none\0/;
+        *display: none;
+    }
+    
+a.tooltip > span {
+    color: #EEEEEE; 
+
+    background: #330033;
+    background: -moz-linear-gradient(top, #330033 0%, #000000 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#330033), color-stop(100%,#000000));
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#330033', endColorstr='#000000',GradientType=0 );
+        
+    border: 1px solid #000000;       
+}    
+      
+a.tooltip span b {
+    background: #330033;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
 
 /* SIGNATURE CRAZINESS BELOW */
 
