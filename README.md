@@ -19,15 +19,24 @@ This software is currently ***alpha***.
 ###Code notes
 * Distributing a hash for the outer container when using Chrome as backbone is tricky, as the outer container can vary slightly. The inner TBB will always have the same checksum, however. (Thanks DCF for testing with this).
 
-###License
+###Licenses
+**Note: All of the software distributed can be used for free, and are open-source.**
+
 Satori uses Artistic License 2.0, a [supervillain-friendly](http://i.imgur.com/1xV099o.jpg) license.
 
-Google Closure (compiled.js) licensed under Apache 2.0.
+* [Google Closure](https://code.google.com/p/closure-library/) (compiled.js) licensed under Apache 2.0.
+* [GPG4Win](https://gpg4win.org) is provided under [GNU Public License](http://gpg4win.org/license.html). 
+* [Tor](https://torproject.org) Browser Bundle [has several licenses](https://gitweb.torproject.org/builders/tor-browser-bundle.git/tree/HEAD:/Bundle-Data/Docs/Licenses). 
+* [TorBirdy](https://addons.mozilla.org/en-us/thunderbird/addon/torbirdy/) is released under the BSD license.
+* [Enigmail]()
+
 
 ###Thanks
 
 **People**<br>
 Many thanks to all of the people who gave feedback, particularly David Fifield, who found several annoying issues with an early version. (And who has seriously *legit* musical taste).
+
+Katie Krauss offered great advice early on, and recommended a feature to alert users that their selection was downloading.
 
 And as always, thanks to those who *must* remain anonymous, for taking the time to test against filters and give usability feedback. :love_letter:
 
