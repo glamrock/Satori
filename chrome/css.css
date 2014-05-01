@@ -372,3 +372,56 @@ div#sig {
 input[type=checkbox]:checked ~ div#sig {
    display:block;
 }
+
+
+/* GUIDES AND TUTORIALS */
+
+
+/* SIGNATURE CRAZINESS BELOW */
+
+input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+label.how { /* verification selector */
+/* needs better styling */
+    font-size: 14px;
+    color: #95B1DC; /*faded light blue */
+    -webkit-appearance: menulist;
+    -moz-appearance: menulist; 
+    display: inline;
+    width: 85px;
+    margin: 10px 0 10px 0;
+    cursor: pointer #ffffff;
+}
+
+div#how pre {
+    background: #EDE5E2; /* light grey */
+
+}
+
+/* hidden/default */
+div#how {
+    background: #EDE5E2; /* light grey */
+    color: #ffffff; /*off-black*/
+    text-align: center;
+    display:none;
+    font-size: 14px;
+    background-color: rgba(0,0,0,0.3);
+    text-shadow: none;
+}
+
+#how input {
+    border: none;
+    background: transparent;
+    color: #888;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+/* onclick/shown */
+input[type=checkbox]:checked ~ div#how {
+   display:block;
+}
