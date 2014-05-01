@@ -20,7 +20,9 @@ This software is currently ***alpha***.
 * Distributing a hash for the outer container when using Chrome as backbone is tricky, as the outer container can vary slightly. The inner TBB will always have the same checksum, however. (Thanks DCF for testing with this).
 
 ###License
-Artistic License 2.0, a [supervillain-friendly](http://i.imgur.com/1xV099o.jpg) license.
+Satori uses Artistic License 2.0, a [supervillain-friendly](http://i.imgur.com/1xV099o.jpg) license.
+
+Google Closure (compiled.js) licensed under Apache 2.0.
 
 ###Thanks
 
@@ -41,6 +43,8 @@ Also thanks to Redacted, for answering my question about SHA256sum checking at L
 
 **Credits**
 Polygon script by <a href="http://codepen.io/Wryte/details/qKgGd" target="_blank">Wryte</a>, used with <a href="https://twitter.com/Craigstra/status/448976757836619776"> permission</a>.
+
+As mentioned above, Satori uses [Google's Closure API](http://docs.closure-library.googlecode.com/git/namespace_goog_crypt.html) to generate sha256 checksums for software.
 
 ###[Contact](https://github.com/glamrock/contact)
 griffin [@](at) cryptolab.net
