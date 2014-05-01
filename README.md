@@ -6,12 +6,17 @@ An unfiltered internet is critical to free speech and self-determination -- the 
 
 What Satori does is provide access to verifiable bundles of privacy-enhancing software to those who need it most.
 
-**Note:** I need people who use a language other than English to help test.
-
 ###Features
 * language detection to offer the right download
 * distributed downloads, with options on Github, Amazon, and the Chrome Web Store itself
 * SHA256sum checker to help verify software integrity
+
+###Software
+* Tor Browser Bundle v3.6 for fifteen languages for Linux, Windows, and Mac.
+* Mozilla Thunderbird v24.4 - email client
+* Enigmail v1.6 - encryption plugin for Thunderbird
+* TorBirdy v0.1.2 - allows you to send and receive email over the Tor network
+* GPG4Win v2.2.1 - required to gpg-encrypt email
 
 ###Danger! High Voltage!!
 This software is currently ***beta***.
@@ -46,7 +51,6 @@ Also thanks to Redacted, for answering my question about SHA256sum checking at L
 * *Black Marble* "A Different Arrangement"
 * *She Wants Revenge* discography
 * *Lincoln County Historical Society* "Die Bastards"
-* *St. Vincent* "Actors" & "St. Vincent"
 * *Thomas Azier* "Hylas 002" & "Verwandlung" EPs
 * *Au Revoir Simone* "Still Night, Still Light"
 
