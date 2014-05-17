@@ -53,10 +53,25 @@ body {
 }
 /* end language selector */
 
+#instructions {
+    margin-top: 15px;
+    float: right;
+}
+#instructions ol {
+    margin-top: -7px;
+}
+
+#instructions ol li {
+    font-size: 13px;
+    color: #FFF;
+    margin-left: 0px;
+    font-weight: normal;
+}
+
 /* download lists */
 
 #dlselect {
-    margin-right: 50px;
+    margin-right: 0px;
 }
 
 #dlselect ul {
@@ -190,6 +205,19 @@ td.hash { /* sha */
     border-radius: 24px 24px 24px 24px;
     border: 0px;
     margin: 0 auto;
+    padding: 1px 20px 20px 20px;
+    font-size: 20px;
+    z-index: 5;
+}
+
+.container {
+    text-align: center;
+    width: 700px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 24px 24px 24px 24px;
+    border: 0px;
+    margin: 0 auto;
+    margin-top: 12px;
     padding: 1px 20px 20px 20px;
     font-size: 20px;
     z-index: 5;

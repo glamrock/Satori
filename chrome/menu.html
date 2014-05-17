@@ -21,9 +21,31 @@
     <h1><img src="img/download.png" />Download</h1>
 
 
+
 <!-- download display -->
 
 <div id="download">
+
+
+
+    <div class="lingua"></div>
+    <div class="lingua_dl"><!-- derp -->
+    </div>
+    </div>
+
+
+    <!-- howto? -->
+        <div id="instructions">
+          <p>How to use</p>
+           <ol>
+           <li>Select your language</li>
+           <li>Download software</li>
+           <li>Check the hash</li>
+           <li>Get a Tor bridge!</li>
+           </ol>
+        </div>
+
+
     <!-- ENGLISH -->
     <div class="lingua">English</div>
     <div class="lingua_dl"><!-- derp -->
@@ -32,33 +54,33 @@
         <ul>
         <li class="os">Windows
            <ul>
-           <li>Tor Browser Bundle v3.6  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.6_en-US.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.6_en-US.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
+           <li>Tor Browser Bundle v3.6  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.6_en-US.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.6_en-US.exe?raw=true" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
             <label for="entbbwin">checksum</label>
             <input type="checkbox" id="entbbwin">
             <div id="sig"><input value="b09a2dd3485088d8507b46dfa03d4b3fec4314b6399f9236b0c17115b14dab6d"></div>
            </li>
 
-           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
-            <label for="gpg4win">checksum</label>
-            <input type="checkbox" id="gpg4win">
+           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/gpg4win-2.2.1.exe?raw=true" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
+            <label for="gpg4winen">checksum</label>
+            <input type="checkbox" id="gpg4winen">
             <div id="sig"><input value="9e45d97fd2a79435e9b89dc10781ab3f3c12a0f9571904b2f36ae10137a1243d"></div>
            </li>
 
-           <li>Thunderbird v24.4 <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/thunderbird-24.4.0-en.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/thunderbird-24.4.0-en.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
+           <li>Thunderbird v24.4 <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/thunderbird-24.4.0-en.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/thunderbird-24.4.0-en.exe?raw=true" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
             <label for="tbirdensig">checksum</label>
             <input type="checkbox" id="tbirdensig">
-            <div id="sig"><input value=""></div>
+            <div id="sig"><input value="0c3e371a87be1642fa929b9bcaab77fe288f68747dcc87ef544b544f3327ab5c"></div>
            </li>
 
-           <li>Torbirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
-            <label for="torbirdysig">checksum</label>
-            <input type="checkbox" id="torbirdysig">
+           <li>TorBirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
+            <label for="TorBirdysigwinen">checksum</label>
+            <input type="checkbox" id="TorBirdysigwinen">
             <div id="sig"><input value="5d371242af55caaace01ddbbb437d5b746c17491de6f2c989fac35916582c94c"></div>
            </li>
 
            <li>Enigmail add-on for Thunderbird (v1.6) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/enigmail.xpi" title="Download from Amazon S2" target="_blank">A</a>
-            <label for="enigsig">checksum</label>
-            <input type="checkbox" id="enigsig">
+            <label for="enigsigwinen">checksum</label>
+            <input type="checkbox" id="enigsigwinen">
             <div id="sig"><input value="fb39cfa2af798373f19cd61b6800d880477255031c93a933cad9f588afe36e6a"></div>
            </li>
 
@@ -66,14 +88,14 @@
         </li>
         <li class="os">Linux
            <ul>
-           <li>Tor Browser Bundle v3.6 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.6_en-US.tar.xz" download="tor_browser_bundle.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.6_en-US.tar.xz" download="tor_browser_bundle.tar.xz" title="Download from Github" target="_blank">B</a>
+           <li>Tor Browser Bundle v3.6 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.6_en-US.tar.xz" download="tor_browser_bundle.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.6_en-US.tar.xz?raw=true" download="tor_browser_bundle.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="entbblin32">checksum</label>
         <input type="checkbox" id="entbblin32">
         <div id="sig">
             <input value="be96534e6ab07395fb4d9b28c6f8e3d482a28cdf5a8db5801941c3e834ff42e4"></div>
             </li>
 
-           <li>Tor Browser Bundle v3.6 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.6_en-US.tar.xz" download="tor_browser_bundle.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.6_en-US.tar.xz" download="tor_browser_bundle.tar.xz" title="Download from Github" target="_blank">B</a>
+           <li>Tor Browser Bundle v3.6 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.6_en-US.tar.xz" download="tor_browser_bundle.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.6_en-US.tar.xz?raw=true" download="tor_browser_bundle.tar.xz" title="Download from Github" target="_blank">B</a>
         <label for="entbblin64">checksum</label>
         <input type="checkbox" id="entbblin64">
         <div id="sig">
@@ -81,20 +103,20 @@
             </li>
 
            <li>Thunderbird v24.4 <!--<a href="https://s3-us-west-2.amazonaws.com/satori2/thunderbird-24.4.0-en.tar.bz2" download="thunderbird244.tar.bz2" title="Download from Amazon S2" target="_blank">A</a>--><a href="https://github.com/glamrock/satori-bin/blob/v1/thunderbird-24.4.0-en.tar.bz2" download="thunderbird244.tar.bz2" title="Download from Github" target="_blank">B</a>
-            <label for="tbirdenlinuxsig">checksum</label>
-            <input type="checkbox" id="tbirdenlinuxsig">
-            <div id="sig"><input value=""></div>
+            <label for="tbirdenlinuxsigen">checksum</label>
+            <input type="checkbox" id="tbirdenlinuxsigen">
+            <div id="sig"><input value="376ab51e3c424db7e235b2e94494d48ce2fa9a8f1fbf5ef5cf9e367bbaf7422d"></div>
            </li>
 
-           <li>Torbirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
-            <label for="torbirdysig">checksum</label>
-            <input type="checkbox" id="torbirdysig">
+           <li>TorBirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
+            <label for="TorBirdysiglinuxen">checksum</label>
+            <input type="checkbox" id="TorBirdysiglinuxen">
             <div id="sig"><input value="5d371242af55caaace01ddbbb437d5b746c17491de6f2c989fac35916582c94c"></div>
            </li>
 
            <li>Enigmail add-on for Thunderbird (v1.6) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/enigmail.xpi" title="Download from Amazon S2" target="_blank">A</a>
-            <label for="enigsig">checksum</label>
-            <input type="checkbox" id="enigsig">
+            <label for="enigsiglinuxen">checksum</label>
+            <input type="checkbox" id="enigsiglinuxen">
             <div id="sig"><input value="fb39cfa2af798373f19cd61b6800d880477255031c93a933cad9f588afe36e6a"></div>
            </li>
 
@@ -104,27 +126,27 @@
 <!-- -->
         <li class="os">Mac
            <ul>
-           <li>Tor Browser Bundle v3.6  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.6_en-US.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.6_en-US.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
+           <li>Tor Browser Bundle v3.6  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/TorBrowser-3.6-osx32_en-US.dmg" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/TorBrowser-3.6-osx32_en-US.dmg?raw=true" title="Download from Github" target="_blank">B</a>
             <label for="entbbwin">checksum</label>
             <input type="checkbox" id="entbbwin">
             <div id="sig"><input value="54f98f22d95663144d7c31fa3f1b2690574abbed9be6ca1718be99c9a9c74623"></div>
            </li>
 
-           <li>Thunderbird v24.4 <!--<a href="https://s3-us-west-2.amazonaws.com/satori2/thunderbird-24.4.0-en.tar.bz2" download="thunderbird244.tar.bz2" title="Download from Amazon S2" target="_blank">A</a>--><a href="https://github.com/glamrock/satori-bin/blob/v1/thunderbird-24.4.0-en.tar.bz2" download="thunderbird244.tar.bz2" title="Download from Github" target="_blank">B</a>
+           <li>Thunderbird v24.4 <!--<a href="https://s3-us-west-2.amazonaws.com/satori2/thunderbird-24.4.0-en.tar.bz2" download="thunderbird244.tar.bz2" title="Download from Amazon S2" target="_blank">A</a>--><a href="https://github.com/glamrock/satori-bin/blob/v1/thunderbird-24.4.0-en.tar.bz2?raw=true" title="Download from Github" target="_blank">B</a>
             <label for="tbirdenosxsig">checksum</label>
             <input type="checkbox" id="tbirdenosxsig">
-            <div id="sig"><input value=""></div>
+            <div id="sig"><input value="af0eee8a9eab91da3520267d76a449c7945fc3d490449fcc8e6c33c996feff13"></div>
            </li>
 
-           <li>Torbirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
-            <label for="torbirdysig">checksum</label>
-            <input type="checkbox" id="torbirdysig">
+           <li>TorBirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
+            <label for="TorBirdysigenmac">checksum</label>
+            <input type="checkbox" id="TorBirdysigenmac">
             <div id="sig"><input value="5d371242af55caaace01ddbbb437d5b746c17491de6f2c989fac35916582c94c"></div>
            </li>
 
            <li>Enigmail add-on for Thunderbird (v1.6) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/enigmail.xpi" title="Download from Amazon S2" target="_blank">A</a>
-            <label for="enigsig">checksum</label>
-            <input type="checkbox" id="enigsig">
+            <label for="enigsigenmac">checksum</label>
+            <input type="checkbox" id="enigsigenmac">
             <div id="sig"><input value="fb39cfa2af798373f19cd61b6800d880477255031c93a933cad9f588afe36e6a"></div>
            </li>
 
@@ -153,13 +175,13 @@
         <ul>
         <li class="os">Windows
            <ul>
-           <li>Tor Browser Bundle v3.6  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.6_fa.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.6_fa.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
+           <li>Tor Browser Bundle v3.6  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.6_fa.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.6_fa.exe?raw=true" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
             <label for="fatbbwin">checksum</label>
             <input type="checkbox" id="fatbbwin">
             <div id="sig"><input value="baee30f55c50f0de2e9efad826ef1d5d799cfdf1a976e7bcc28ba466d975769d"></div>
            </li>
 
-           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
+           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/gpg4win-2.2.1.exe?raw=true" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
             <label for="gpg4win">checksum</label>
             <input type="checkbox" id="gpg4win">
             <div id="sig"><input value="9e45d97fd2a79435e9b89dc10781ab3f3c12a0f9571904b2f36ae10137a1243d"></div>
@@ -168,9 +190,9 @@
            <li><a class="grey">Thunderbird is not yet available</a>
            </li>
 
-           <li>Torbirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
-            <label for="torbirdysig">checksum</label>
-            <input type="checkbox" id="torbirdysig">
+           <li>TorBirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
+            <label for="TorBirdysigfawin">checksum</label>
+            <input type="checkbox" id="TorBirdysigfawin">
             <div id="sig"><input value="5d371242af55caaace01ddbbb437d5b746c17491de6f2c989fac35916582c94c"></div>
            </li>
 
@@ -179,14 +201,14 @@
         </li>
         <li class="os">Linux
            <ul>
-           <li>Tor Browser Bundle v3.6 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.6_fa.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.6_fa.tar.xz" title="Download from Github" target="_blank">B</a>
+           <li>Tor Browser Bundle v3.6 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.6_fa.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.6_fa.tar.xz?raw=true" title="Download from Github" target="_blank">B</a>
         <label for="fatbblin32">checksum</label>
         <input type="checkbox" id="fatbblin32">
         <div id="sig">
             <input value="14921579155b5a834442abe82dc509cd3627ea220ad9e558fb3c1f45ad43d356"></div>
         </li>
 
-           <li>Tor Browser Bundle v3.6 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.6_fa.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.6_fa.tar.xz" title="Download from Github" target="_blank">B</a>
+           <li>Tor Browser Bundle v3.6 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.6_fa.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.6_fa.tar.xz?raw=true" title="Download from Github" target="_blank">B</a>
         <label for="fatbblin64">checksum</label>
         <input type="checkbox" id="fatbblin64">
         <div id="sig">
@@ -196,7 +218,7 @@
 
         <li class="os">Mac
            <ul>
-           <li>Tor Browser Bundle v3.6 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/osx/TorBrowser-3.6-osx32_fa.dmg" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/TorBrowser-3.6-osx32_fa.dmg" title="Download from Github" target="_blank">B</a>
+           <li>Tor Browser Bundle v3.6 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/osx/TorBrowser-3.6-osx32_fa.dmg" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/TorBrowser-3.6-osx32_fa.dmg?raw=true" title="Download from Github" target="_blank">B</a>
         <label for="fatbbosx">checksum</label>
         <input type="checkbox" id="fatbbosx">
         <div id="sig">
@@ -205,11 +227,6 @@
            </ul>
         </li>
 
-        <li class="os">Firefox
-           <ul>
-                <li></li>
-           </ul>
-        </li>
         </ul>
         </div>
 
@@ -225,24 +242,24 @@
         <ul>
         <li class="os">Windows
            <ul>
-           <li>Tor Browser Bundle v3.6  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.6_ar.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.6_ar.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
+           <li>Tor Browser Bundle v3.6  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.6_ar.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.6_ar.exe?raw=true" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
             <label for="artbbwin">checksum</label>
             <input type="checkbox" id="artbbwin">
             <div id="sig"><input value="9967a6337caf0f3b02c79007b429d7bcc832012055b343f27fe515f8c84de658"></div>
            </li>
 
-           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
-            <label for="gpg4win">checksum</label>
-            <input type="checkbox" id="gpg4win">
+           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/gpg4win-2.2.1.exe?raw=true" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
+            <label for="gpg4winarwin">checksum</label>
+            <input type="checkbox" id="gpg4winarwin">
             <div id="sig"><input value="9e45d97fd2a79435e9b89dc10781ab3f3c12a0f9571904b2f36ae10137a1243d"></div>
            </li>
 
            <li><a class="grey">Thunderbird</a>
            </li>
 
-           <li>Torbirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
-            <label for="torbirdysig">checksum</label>
-            <input type="checkbox" id="torbirdysig">
+           <li>TorBirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
+            <label for="TorBirdysigarwin">checksum</label>
+            <input type="checkbox" id="TorBirdysigarwin">
             <div id="sig"><input value="5d371242af55caaace01ddbbb437d5b746c17491de6f2c989fac35916582c94c"></div>
            </li>
            <li><a class="grey">Enigmail add-on for Thunderbird (English)</a></li>
@@ -250,14 +267,14 @@
         </li>
         <li class="os">Linux
            <ul>
-           <li>Tor Browser Bundle v3.6 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.6_ar.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.6_ar.tar.xz" title="Download from Github" target="_blank">B</a>
+           <li>Tor Browser Bundle v3.6 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.6_ar.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.6_ar.tar.xz?raw=true" title="Download from Github" target="_blank">B</a>
         <label for="artbblin32">checksum</label>
         <input type="checkbox" id="artbblin32">
         <div id="sig">
             <input value="d738b08a98b535e5537b9546083bb3b1f1d5b3cd60d39126eda718310acb4dea"></div>
         </li>
 
-           <li>Tor Browser Bundle v3.6 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.6_ar.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.6_ar.tar.xz" title="Download from Github" target="_blank">B</a>
+           <li>Tor Browser Bundle v3.6 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.6_ar.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.6_ar.tar.xz?raw=true" title="Download from Github" target="_blank">B</a>
         <label for="artbblin64">checksum</label>
         <input type="checkbox" id="artbblin64">
         <div id="sig">
@@ -269,7 +286,7 @@
 
         <li class="os">Mac
            <ul>
-           <li>Tor Browser Bundle v3.6 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/osx/TorBrowser-3.6-osx32_ar.dmg" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/TorBrowser-3.6-osx32_ar.dmg" title="Download from Github" target="_blank">B</a>
+           <li>Tor Browser Bundle v3.6 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/osx/TorBrowser-3.6-osx32_ar.dmg" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/TorBrowser-3.6-osx32_ar.dmg?raw=true" title="Download from Github" target="_blank">B</a>
         <label for="artbbosx">checksum</label>
         <input type="checkbox" id="artbbosx">
         <div id="sig">
@@ -295,13 +312,13 @@
         <ul>
         <li class="os">Windows
            <ul>
-           <li>Tor Browser Bundle v3.6  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.6_zh-CN.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.6_zh-CN.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
+           <li>Tor Browser Bundle v3.6  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.6_zh-CN.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.6_zh-CN.exe?raw=true" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
             <label for="zhtbbwin">checksum</label>
             <input type="checkbox" id="zhtbbwin">
             <div id="sig"><input value="7ceb1e36d523eb358798064641b1ffc837909b88b0af5fc1ddf9d734129413a6"></div>
            </li>
 
-           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
+           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/gpg4win-2.2.1.exe?raw=true" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
             <label for="gpg4win">checksum</label>
             <input type="checkbox" id="gpg4win">
             <div id="sig"><input value="9e45d97fd2a79435e9b89dc10781ab3f3c12a0f9571904b2f36ae10137a1243d"></div>
@@ -310,9 +327,9 @@
            <li><a class="grey">Thunderbird is not yet available</a>
            </li>
 
-           <li>Torbirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
-            <label for="torbirdysig">checksum</label>
-            <input type="checkbox" id="torbirdysig">
+           <li>TorBirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
+            <label for="TorBirdysigzhen">checksum</label>
+            <input type="checkbox" id="TorBirdysigzhen">
             <div id="sig"><input value="5d371242af55caaace01ddbbb437d5b746c17491de6f2c989fac35916582c94c"></div>
            </li>
 
@@ -321,14 +338,14 @@
         </li>
         <li class="os">Linux
            <ul>
-           <li>Tor Browser Bundle v3.6 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.6_zh-CN.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.6_zh-CN.tar.xz" title="Download from Github" target="_blank">B</a>
+           <li>Tor Browser Bundle v3.6 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.6_zh-CN.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.6_zh-CN.tar.xz?raw=true" title="Download from Github" target="_blank">B</a>
         <label for="zhtbblin32">checksum</label>
         <input type="checkbox" id="zhtbblin32">
         <div id="sig">
             <input value="af61f7ec42313544d4a260ebc815f42be8c73a30ac80e1b3f298b64f3159e0af"></div>
         </li>
 
-           <li>Tor Browser Bundle v3.6 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.6_zh-CN.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.6_zh-CN.tar.xz" title="Download from Github" target="_blank">B</a>
+           <li>Tor Browser Bundle v3.6 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.6_zh-CN.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.6_zh-CN.tar.xz?raw=true" title="Download from Github" target="_blank">B</a>
         <label for="zhtbblin64">checksum</label>
         <input type="checkbox" id="zhtbblin64">
         <div id="sig">
@@ -340,7 +357,7 @@
 
         <li class="os">Mac
            <ul>
-           <li>Tor Browser Bundle v3.6 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/osx/TorBrowser-3.6-osx32_zh-CN.dmg" title="Download from Amazon S2" target="_blank">A</a><a href="ttps://github.com/glamrock/tbb-bin/blob/master/TorBrowser-3.6-osx32_zh-CN.dmg" title="Download from Github" target="_blank">B</a>
+           <li>Tor Browser Bundle v3.6 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/osx/TorBrowser-3.6-osx32_zh-CN.dmg" title="Download from Amazon S2" target="_blank">A</a><a href="ttps://github.com/glamrock/tbb-bin/blob/master/TorBrowser-3.6-osx32_zh-CN.dmg?raw=true" title="Download from Github" target="_blank">B</a>
         <label for="zhtbbosx">checksum</label>
         <input type="checkbox" id="zhtbbosx">
         <div id="sig">
@@ -367,15 +384,15 @@
         <ul>
         <li class="os">Windows
            <ul>
-           <li>Tor Browser Bundle v3.6  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.6_ru.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.6_ru.exe" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
+           <li>Tor Browser Bundle v3.6  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.6_ru.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/torbrowser-install-3.6_ru.exe?raw=true" download="tor_browser_bundle.exe" title="Download from Github" target="_blank">B</a>
             <label for="rutbbwin">checksum</label>
             <input type="checkbox" id="rutbbwin">
             <div id="sig"><input value="5e74c7d0449e2ec2fa78a5635c833ed39e1fd6ba3b5d8078ee0e7ad9d8873177"></div>
            </li>
 
-           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
-            <label for="gpg4win">checksum</label>
-            <input type="checkbox" id="gpg4win">
+           <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/gpg4win-2.2.1.exe?raw=true" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
+            <label for="gpg4winru">checksum</label>
+            <input type="checkbox" id="gpg4winru">
             <div id="sig"><input value="9e45d97fd2a79435e9b89dc10781ab3f3c12a0f9571904b2f36ae10137a1243d"></div>
            </li>
 
@@ -383,9 +400,9 @@
            </li>
 
 
-           <li>Torbirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
-            <label for="torbirdysig">checksum</label>
-            <input type="checkbox" id="torbirdysig">
+           <li>TorBirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
+            <label for="TorBirdysigruwin">checksum</label>
+            <input type="checkbox" id="TorBirdysigruwin">
             <div id="sig"><input value="5d371242af55caaace01ddbbb437d5b746c17491de6f2c989fac35916582c94c"></div>
            </li>
 
@@ -394,14 +411,14 @@
         </li>
         <li class="os">Linux
            <ul>
-           <li>Tor Browser Bundle v3.6 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.6_ru.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.6_ru.tar.xz" title="Download from Github" target="_blank">B</a>
+           <li>Tor Browser Bundle v3.6 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.6_ru.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.6_ru.tar.xz?raw=true" title="Download from Github" target="_blank">B</a>
         <label for="rutbblin32">checksum</label>
         <input type="checkbox" id="rutbblin32">
         <div id="sig">
             <input value="0489d4294bcfdc90038f073f4e9eb0a08e026e9afc409072c0d22a8a84c9b38f"></div>
         </li>
 
-           <li>Tor Browser Bundle v3.6 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.6_ru.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.6_ru.tar.xz" title="Download from Github" target="_blank">B</a>
+           <li>Tor Browser Bundle v3.6 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.6_ru.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.6_ru.tar.xz?raw=true" title="Download from Github" target="_blank">B</a>
         <label for="rutbblin64">checksum</label>
         <input type="checkbox" id="rutbblin64">
         <div id="sig">
@@ -422,10 +439,6 @@
            </ul>
         </li>
 
-        <li class="os">Firefox
-           <ul>
-           </ul>
-        </li>
         </ul>
         </div>
     </div>
@@ -440,24 +453,24 @@
         <ul>
         <li class="os">Windows
            <ul>
-           <li>Thunderbird v24.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/torbrowser-install-3.6_vi.exe" download="tor_browser_bundle.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/thunderbird-24.4.0-cat.exe" download="thunderbird-24.exe" title="Download from Github" target="_blank">B</a>
+           <li>Thunderbird v24.4  <a href="https://s3-us-west-2.amazonaws.com/satori2/win/thunderbird-24.4.0-cat.exe" download="thunderbird-24.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/thunderbird-24.4.0-cat.exe?raw=true" download="thunderbird-24.exe" title="Download from Github" target="_blank">B</a>
             <label for="vitbbwin">checksum</label>
             <input type="checkbox" id="vitbbwin">
-            <div id="sig"><input value="4de0d948e1c1426f1686ae2fd8ad926969204e50098897a730a01ccf70b7489d"></div>
+            <div id="sig"><input value="3446460af0a9edda0c01b4d0f700c1de145dc1b5cf0d1d6e17b84ff6390c6df3"></div>
            </li>
 
            <li>GPG4Win v2.2.1 <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/satori-bin/blob/v1/gpg4win-2.2.1.exe" download="gpg4win.exe" title="Download from Github" target="_blank">B</a>
-            <label for="gpg4win">checksum</label>
-            <input type="checkbox" id="gpg4win">
+            <label for="gpg4wincat">checksum</label>
+            <input type="checkbox" id="gpg4wincat">
             <div id="sig"><input value="9e45d97fd2a79435e9b89dc10781ab3f3c12a0f9571904b2f36ae10137a1243d"></div>
            </li>
 
            <li><a class="grey">Thunderbird is not yet available</a>
            </li>
 
-           <li>Torbirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
-            <label for="torbirdysig">checksum</label>
-            <input type="checkbox" id="torbirdysig">
+           <li>TorBirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
+            <label for="TorBirdysigcatwin">checksum</label>
+            <input type="checkbox" id="TorBirdysigcatwin">
             <div id="sig"><input value="5d371242af55caaace01ddbbb437d5b746c17491de6f2c989fac35916582c94c"></div>
            </li>
 
@@ -465,33 +478,6 @@
            <li><a class="grey">Enigmail add-on for Thunderbird (English)</a></li>
            </ul>
         </li>
-        <li class="os">Linux
-           <ul>
-           <li>Tor Browser Bundle v3.6 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux32/tor-browser-linux32-3.6_vi.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux32-3.6_vi.tar.xz" title="Download from Github" target="_blank">B</a>
-        <label for="vitbblin32">checksum</label>
-        <input type="checkbox" id="vitbblin32">
-        <div id="sig">
-            <input value="cec6f3970572bab398035ee16305fa8e7c92d460b29cb91b549139d6c347882a"></div>
-        </li>
-
-           <li>Tor Browser Bundle v3.6 (64-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/linux64/tor-browser-linux64-3.6_vi.tar.xz" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/tor-browser-linux64-3.6_vi.tar.xz" title="Download from Github" target="_blank">B</a>
-        <label for="vitbblin64">checksum</label>
-        <input type="checkbox" id="vitbblin64">
-        <div id="sig">
-            <input value="6cc2452daec1207e8cd6ee647de2c9a36046f6db00899d337cc5872f85f82e51"></div>
-        </li>
-
-           </ul>
-        </li>
-
-        <li class="os">Mac
-           <ul>
-           <li>Tor Browser Bundle v3.6 (32-bit) <a href="https://s3-us-west-2.amazonaws.com/satori2/osx/TorBrowser-3.6-osx32_vi.dmg" title="Download from Amazon S2" target="_blank">A</a><a href="https://github.com/glamrock/tbb-bin/blob/master/TorBrowser-3.6-osx32_vi.dmg" title="Download from Github" target="_blank">B</a>
-        <label for="vitbbosx">checksum</label>
-        <input type="checkbox" id="vitbbosx">
-        <div id="sig">
-            <input value="c405d7967bcddb866d8e2309a6a9a5eefb9ef852b98d21b071a48af29de24f8d"></div>
-</li>
            </ul>
         </li>
 
@@ -502,12 +488,11 @@
         </ul>
         </div>
     </div>
+
     <!-- VIETNAMESE -->
-<!--
     <div class="lingua">Vietnamese</div>
     <div class="lingua_dl"><!-- derp -->
 
-<!--
         <div id="dlselect">
         <ul>
         <li class="os">Windows
@@ -529,9 +514,9 @@
 
 
 
-           <li>Torbirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
-            <label for="torbirdysig">checksum</label>
-            <input type="checkbox" id="torbirdysig">
+           <li>TorBirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
+            <label for="TorBirdysig">checksum</label>
+            <input type="checkbox" id="TorBirdysig">
             <div id="sig"><input value="5d371242af55caaace01ddbbb437d5b746c17491de6f2c989fac35916582c94c"></div>
            </li>
 
@@ -567,15 +552,10 @@
 </li>
            </ul>
         </li>
-
-        <li class="os">Firefox
-           <ul>
-           </ul>
-        </li>
         </ul>
         </div>
     </div>
--->
+
 
     <!-- ITALIA! -->
 
@@ -603,9 +583,9 @@
            </li>
 
 
-           <li>Torbirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
-            <label for="torbirdysig">checksum</label>
-            <input type="checkbox" id="torbirdysig">
+           <li>TorBirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
+            <label for="TorBirdysig">checksum</label>
+            <input type="checkbox" id="TorBirdysig">
             <div id="sig"><input value="5d371242af55caaace01ddbbb437d5b746c17491de6f2c989fac35916582c94c"></div>
            </li>
 
@@ -676,9 +656,9 @@
            </li>
 
 
-           <li>Torbirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
-            <label for="torbirdysig">checksum</label>
-            <input type="checkbox" id="torbirdysig">
+           <li>TorBirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
+            <label for="TorBirdysig">checksum</label>
+            <input type="checkbox" id="TorBirdysig">
             <div id="sig"><input value="5d371242af55caaace01ddbbb437d5b746c17491de6f2c989fac35916582c94c"></div>
            </li>
 
@@ -748,9 +728,9 @@
            <li><a class="grey">Thunderbird is not yet available</a>
            </li>
 
-           <li>Torbirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
-            <label for="torbirdysig">checksum</label>
-            <input type="checkbox" id="torbirdysig">
+           <li>TorBirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
+            <label for="TorBirdysig">checksum</label>
+            <input type="checkbox" id="TorBirdysig">
             <div id="sig"><input value="5d371242af55caaace01ddbbb437d5b746c17491de6f2c989fac35916582c94c"></div>
            </li>
 
@@ -820,9 +800,9 @@
            <li><a class="grey">Thunderbird is not yet available</a>
            </li>
 
-           <li>Torbirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
-            <label for="torbirdysig">checksum</label>
-            <input type="checkbox" id="torbirdysig">
+           <li>TorBirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
+            <label for="TorBirdysig">checksum</label>
+            <input type="checkbox" id="TorBirdysig">
             <div id="sig"><input value="5d371242af55caaace01ddbbb437d5b746c17491de6f2c989fac35916582c94c"></div>
            </li>
 
@@ -892,9 +872,9 @@
 
            <li><a class="grey">Thunderbird</a>
            </li>
-           <li>Torbirdy add-on for Thunderbird (v0.1.2)<a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
-            <label for="torbirdysig">checksum</label>
-            <input type="checkbox" id="torbirdysig">
+           <li>TorBirdy add-on for Thunderbird (v0.1.2)<a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
+            <label for="TorBirdysig">checksum</label>
+            <input type="checkbox" id="TorBirdysig">
             <div id="sig"><input value="5d371242af55caaace01ddbbb437d5b746c17491de6f2c989fac35916582c94c"></div>
            </li>
 
@@ -964,9 +944,9 @@
            <li><a class="grey">Thunderbird is not yet available</a>
            </li>
 
-           <li>Torbirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
-            <label for="torbirdysig">checksum</label>
-            <input type="checkbox" id="torbirdysig">
+           <li>TorBirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
+            <label for="TorBirdysig">checksum</label>
+            <input type="checkbox" id="TorBirdysig">
             <div id="sig"><input value="5d371242af55caaace01ddbbb437d5b746c17491de6f2c989fac35916582c94c"></div>
            </li>
 
@@ -1037,9 +1017,9 @@
            <li><a class="grey">Thunderbird is not yet available</a>
            </li>
 
-           <li>Torbirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
-            <label for="torbirdysig">checksum</label>
-            <input type="checkbox" id="torbirdysig">
+           <li>TorBirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
+            <label for="TorBirdysig">checksum</label>
+            <input type="checkbox" id="TorBirdysig">
             <div id="sig"><input value="5d371242af55caaace01ddbbb437d5b746c17491de6f2c989fac35916582c94c"></div>
            </li>
 
@@ -1109,9 +1089,9 @@
            <li><a class="grey">Thunderbird is not yet available =(</a>
            </li>
 
-           <li>Torbirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
-            <label for="torbirdysig">checksum</label>
-            <input type="checkbox" id="torbirdysig">
+           <li>TorBirdy add-on for Thunderbird (v0.1.2) <a href="https://s3-us-west-2.amazonaws.com/satori2/bin/torbirdy.xpi" title="Download from Amazon S2" target="_blank">A</a>
+            <label for="TorBirdysig">checksum</label>
+            <input type="checkbox" id="TorBirdysig">
             <div id="sig"><input value="5d371242af55caaace01ddbbb437d5b746c17491de6f2c989fac35916582c94c"></div>
            </li>
 
@@ -1161,6 +1141,7 @@
 
 <!-- END OF LANGUAGE -->
 
+<div class="container">
 
 <h1>Generate Hash</h1>
 
@@ -1196,15 +1177,13 @@
 </div>
 </div>
 
+</div>
 
 <!-- MIND THE GAP -->
 <div id="bridges">
 <h2>Here is a fresh bridge.</h2>
         <div class="bridge"></div>
 
-        <label for="bridgehowto" class="how">caaaats</label>
-        <input type="checkbox" id="bridgehowto">
-        <div id="howto">supercats</div>
 </div>
 
 

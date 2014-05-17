@@ -3,7 +3,7 @@
 
   "name": "Satori",
   "description": "Tamper-resistant downloads of security software",
-  "version": "0.11",
+  "version": "0.50",
   "manifest_version": 2,
   "offline_enabled": true,
   "minimum_chrome_version": "23",
