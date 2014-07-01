@@ -3,7 +3,8 @@ html {
 }
 
 body {
-	background: #000 url('img/background.jpg') top left fixed;
+	background: #000 url('img/background.jpg') top left;
+	background-attachment: scroll;
     min-height:400px;
     margin: 0;
     padding: none;
@@ -21,7 +22,8 @@ body {
 #can {
     margin: 0;
     position:fixed; top:0;left:0;
-    background-image: url('img/background.jpg') top left fixed;
+    background-image: url('img/background.jpg') top left;
+    background-attachment: scroll;
     z-index: -1;
 }
 
