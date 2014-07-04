@@ -3,8 +3,7 @@ html {
 }
 
 body {
-	background: #000 url('img/background.jpg') top left;
-	background-attachment: scroll;
+	background: #000 url('img/background.jpg') top left fixed;
     min-height:400px;
     margin: 0;
     padding: none;
@@ -18,15 +17,6 @@ body {
 *:select{
     text-shadow: none;
 }
-
-#can {
-    margin: 0;
-    position:fixed; top:0;left:0;
-    background-image: url('img/background.jpg') top left;
-    background-attachment: scroll;
-    z-index: -1;
-}
-
 #logo {
     background-image: url('img/logo3b.png');
     float: right;
