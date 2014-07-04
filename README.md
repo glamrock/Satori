@@ -55,7 +55,7 @@ Also thanks to Redacted, for answering my question about SHA256sum checking at L
 * *Au Revoir Simone* "Still Night, Still Light"
 
 **Credits**<br>
-Polygon script by <a href="http://codepen.io/Wryte/details/qKgGd" target="_blank">Wryte</a>, used with <a href="https://twitter.com/Craigstra/status/448976757836619776"> permission</a>.
+Bubble heart icon by <a href="http://ciaracable.com">Ciara Cable</a>, used with permission. Download icon by  <a href="http://lunartemplates.com" target="_blank">Lunar Templates</a>. 
 
 As mentioned above, Satori uses [Google's Closure API](http://docs.closure-library.googlecode.com/git/namespace_goog_crypt.html) to generate sha256 checksums for software.
 
