@@ -14,11 +14,11 @@ What Satori does is provide access to verifiable bundles of privacy-enhancing so
 * SHA256sum checker to help verify software integrity
 
 ###Software
-* Tor Browser Bundle v3.6 for fifteen languages for Linux, Windows, and Mac.
-* Mozilla Thunderbird v24.4 - email client
-* Enigmail v1.6 - encryption plugin for Thunderbird
-* TorBirdy v0.1.2 - allows you to send and receive email over the Tor network
-* GPG4Win v2.2.1 - required to gpg-encrypt email
+* Tor Browser Bundle for fifteen languages for Linux, Windows, and Mac.
+* Mozilla Thunderbird - email client
+* Enigmail - encryption plugin for Thunderbird
+* TorBirdy - allows you to send and receive email over the Tor network
+* GPG4Win - required to gpg-encrypt email
 
 ###Danger! High Voltage!!
 This software is currently ***beta***.
