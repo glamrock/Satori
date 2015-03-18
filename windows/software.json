@@ -1,0 +1,5 @@
+[
+    {"title": "Tor browser v4.0.3", "section":"windows", "sha256":"somesum", "link":"http://ru.download.nvidia.com/Windows/347.52/347.52-desktop-win8-win7-winvista-64bit-international-whql.exe"},
+    {"title": "GPG4Win v2.21", "section":"windows", "sha256":"somesum", "link":"http://ru.download.nvidia.com/Windows/347.52/347.52-desktop-win8-win7-winvista-64bit-international-whql.exe"},
+    {"title": "Tor browser v4.0.3 (32 bit)", "section":"linux", "sha256":"somesum", "link":"http://ru.download.nvidia.com/Windows/347.52/347.52-desktop-win8-win7-winvista-64bit-international-whql.exe"}
+]
