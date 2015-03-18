@@ -1791,5 +1791,5 @@
   {"sha256sum":"1591e4f4bfc59c4dcc011096651b070f556408fd350320c72d2e8760313d3fdd", "title":"Vidalia Exit Bundle v0.2.4.23-0.2.21 for Windows"},
   {"sha256sum":"568efabc29eba62819868f9ab0a2d0e07cf15b5f482ed5700d9a898c21b7b018", "title":"Vidalia Relay Bundle v0.2.4.22-0.2.21-1 for Windows"},
   {"sha256sum":"3f1da762ac734c77c9a75fccba037e5b7a3136eb18641130d69e887c4ac6a185", "title":"Vidalia Relay Bundle v0.2.4.22-0.2.21 for Windows"},
-  {"sha256sum":"d70930c3afa9e0ea91df052826729ee5d0ff180129d897cc36fb813dca95629a", "title":"Vidalia Relay Bundle v0.2.4.23-0.2.21 for Windows"},
+  {"sha256sum":"d70930c3afa9e0ea91df052826729ee5d0ff180129d897cc36fb813dca95629a", "title":"Vidalia Relay Bundle v0.2.4.23-0.2.21 for Windows"}
 ]
