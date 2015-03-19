@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.abdsoft.Hash"
+    version="0.1.0">
+	
+    <name>Hash</name>
+    <description>Cordova Hash Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,Hash</keywords>
+
+
+    <js-module src="www/Hash.js" name="Hash">
+        <clobbers target="navigator.Hash" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Hash">
+                <param name="android-package" value="com.abdsoft.Hash.HashPlugin"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/HashPlugin.java" target-dir="src/com/abdsoft/Hash/" />
+    </platform>
+
+</plugin>

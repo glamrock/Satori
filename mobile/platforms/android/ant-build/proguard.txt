@@ -1,0 +1,9 @@
+# view res/layout/main.xml #generated:2
+-keep class android.support.v4.widget.DrawerLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:15
+-keep class com.orleonsoft.android.simplefilechooser.ui.FileChooserActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:9
+-keep class com.satori.sha.CordovaApp { <init>(...); }
+

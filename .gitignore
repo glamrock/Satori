@@ -2,3 +2,6 @@
 *.tar.gz
 *.exe
 bin/*
+.c9revisions
+.hypnotoad
+*-test*

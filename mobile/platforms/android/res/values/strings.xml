@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">shacode</string>
+    <string name="launcher_name">@string/app_name</string>
+    <string name="activity_name">@string/launcher_name</string>
+    <string name="fileSize">File Size</string>
+    <string name="currentDir">Current Dir</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="category">Category</string>
+    <string name="internal">Internal</string>
+    <string name="external">External</string>
+</resources>
