@@ -1,6 +1,6 @@
 *~
 *.tar.gz
-*.exe
+*.log
 bin/*
 .c9revisions
 .hypnotoad
