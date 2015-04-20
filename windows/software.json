@@ -1,5 +1,5 @@
 [
-    {"title": "Tor browser v4.0.3", "section":"windows", "sha256":"somesum", "link":"http://ru.download.nvidia.com/Windows/347.52/347.52-desktop-win8-win7-winvista-64bit-international-whql.exe"},
+    {"title": "Tor browser v4.0.8", "section":"windows", "sha256":"c430c9120130dff86f5d887eea4aa96ff023ac5b7c403a3936b8ab034dc13c39", "link":"https://archive.torproject.org/tor-package-archive/torbrowser/4.0.8/torbrowser-install-4.0.8_en-US.exe"},
     {"title": "GPG4Win v2.21", "section":"windows", "sha256":"somesum", "link":"http://ru.download.nvidia.com/Windows/347.52/347.52-desktop-win8-win7-winvista-64bit-international-whql.exe"},
-    {"title": "Tor browser v4.0.3 (32 bit)", "section":"linux", "sha256":"somesum", "link":"http://ru.download.nvidia.com/Windows/347.52/347.52-desktop-win8-win7-winvista-64bit-international-whql.exe"}
+    {"title": "Tor browser v4.0.8 (32 bit)", "section":"linux", "sha256":"152186ff31425660675c082af1759ef6cc65f618b6e49e25385c7ccacfe70061", "link":"https://archive.torproject.org/tor-package-archive/torbrowser/4.0.8/tor-browser-linux32-4.0.8_en-US.tar.xz"}
 ]
