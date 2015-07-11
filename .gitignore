@@ -1,7 +1,9 @@
 *~
+*sha-temp.txt
 *.tar.gz
 *.log
 bin/*
 .c9revisions
 .hypnotoad
 *-test*
+
