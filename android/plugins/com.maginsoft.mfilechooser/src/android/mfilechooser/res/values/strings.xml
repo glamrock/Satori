@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Simple File Chooser</string>
+    <string name="fileSize">File Size</string>
+    <string name="currentDir">Current Dir</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="category">Category</string>
+    <string name="internal">Internal</string>
+    <string name="external">External</string>
+</resources>
