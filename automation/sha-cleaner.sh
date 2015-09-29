@@ -59,5 +59,3 @@ sed -i 's/_tr/ (tr)/g' ./sha-temp.txt
 sed -i 's/_vi/ (vi)/g' ./sha-temp.txt 
 sed -i 's/_zh-CN/ (zh-CN)/g' ./sha-temp.txt 
 
-
-#sed -i 's///g' ./sha-temp.txt 
