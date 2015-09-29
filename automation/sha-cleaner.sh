@@ -37,6 +37,10 @@ sed -i 's/TorBrowser-/Tor Browser for Mac v/g' ./sha-temp.txt
 sed -i 's/tor-browser-/Tor Browser for Linux v/g' ./sha-temp.txt 
 sed -i 's/torbrowser-install-/Tor Browser for Windows v/g' ./sha-temp.txt 
 
+sed -i 's/linux64-//g' ./sha-temp.txt
+sed -i 's/linux32-//g' ./sha-temp.txt
+sed -i 's/-osx64//g' ./sha-temp.txt
+
 # remove extensions
 sed -i 's/.dmg//g' ./sha-temp.txt 
 sed -i 's/.exe//g' ./sha-temp.txt 
