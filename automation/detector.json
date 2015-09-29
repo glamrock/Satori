@@ -39,6 +39,11 @@
 {"sha256sum":"a32009af6d65cdc158bb4592f28f64147bbc5c9468693a413333dd7999f93592", "title":"Tails v1.3.2"},
 {"sha256sum":"339c8712768c831e59c4b1523002b83ccb98a4fe62f6a221fee3a15e779ca65d", "title":"Tails v1.4"},
 {"sha256sum":"c7bf55250ca7a7ad897fd219af6ef3d4768be54fb3e2537abb3da8f7f4ed8913", "title":"Tails v1.41"},
+{"sha256sum":"ab4299585e74fbdc91d26faea424a5df6d05753b2c6f34340ba3af69308993d1", "title":"Tails v1.5"},
+{"sha256sum":"a4c9ac9eca08562a94914230100e6353d07a0f57c017411c95789351b0366198", "title":"Tails v1.51"},
+{"sha256sum":"6daba429ec9372af0822d8dd4c3e96407240a31c9373173a5985d8d669ea1d00", "title":"Tails v1.6"},
+
+
 
 {"sha256sum":"c217c49abe5134007ceb2623a6189a73fa02af9d2b2bbcc5cbc4cb5da7b36a5d", "title":"CACertMan-0.0.2-20110906.apk"},
 {"sha256sum":"251ebd40ce4a281a2292692707fb1e9c91428994cbad80a416a297db51069eb8", "title":"CACertMan-0.0.2-alpha-20111011.apk"},
