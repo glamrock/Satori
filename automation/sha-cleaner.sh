@@ -3,7 +3,7 @@
 ## sha256 cleaner for tor-bin/sha-temp.txt
 # 
 # Author: Griffin Boyce, griffin@cryptolab.net
-# converts Tor's sha256sum files into json entries for Satori
+# converts sha256sum files into json entries for Satori
 # be sure to name your file sha-temp.txt before running
 
 
@@ -32,11 +32,10 @@ sed -i 's/{"sha256sum":""},//g' ./sha-temp.txt
 sed -i 's/^", "title":"{"/{"/' ./sha-temp.txt # fix common duplication error
 
 
-# clean up the software titles
+# clean up Tor software titles
 sed -i 's/TorBrowser-/Tor Browser for Mac v/g' ./sha-temp.txt 
 sed -i 's/tor-browser-/Tor Browser for Linux v/g' ./sha-temp.txt 
 sed -i 's/torbrowser-install-/Tor Browser for Windows v/g' ./sha-temp.txt 
-
 sed -i 's/linux64-//g' ./sha-temp.txt
 sed -i 's/linux32-//g' ./sha-temp.txt
 sed -i 's/-osx64//g' ./sha-temp.txt
