@@ -43,7 +43,9 @@
 {"sha256sum":"a4c9ac9eca08562a94914230100e6353d07a0f57c017411c95789351b0366198", "title":"Tails v1.51"},
 {"sha256sum":"6daba429ec9372af0822d8dd4c3e96407240a31c9373173a5985d8d669ea1d00", "title":"Tails v1.6"},
 
+{"sha256sum":"06fa7c55a042eb70cb056a0f3efec5cc7caf66bdec512123a04a373fee2b517d", "title":"GPG4win v2.2.6"},
 
+{"sha256sum":"83c92436df6e1e41c83bc80264c44f589a90ea7e1c9dfc307db7287a4eae12c9", "title":"TorBirdy v0.1.4"},
 
 {"sha256sum":"c217c49abe5134007ceb2623a6189a73fa02af9d2b2bbcc5cbc4cb5da7b36a5d", "title":"CACertMan-0.0.2-20110906.apk"},
 {"sha256sum":"251ebd40ce4a281a2292692707fb1e9c91428994cbad80a416a297db51069eb8", "title":"CACertMan-0.0.2-alpha-20111011.apk"},
