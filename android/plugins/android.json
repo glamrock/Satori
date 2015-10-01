@@ -117,6 +117,10 @@
                         {
                             "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
                             "count": 2
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -131,6 +135,9 @@
             "PACKAGE_NAME": "com.satori.sha"
         },
         "org.apache.cordova.file-transfer": {
+            "PACKAGE_NAME": "com.satori.sha"
+        },
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.satori.sha"
         }
     },

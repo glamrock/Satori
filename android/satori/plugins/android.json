@@ -1,0 +1,149 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Hash\"><param name=\"android-package\" value=\"com.abdsoft.Hash.HashPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"MFileChooser\"><param name=\"android-package\" value=\"com.maginsoft.phonegap.plugin.MFileChooser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"File\"><param name=\"android-package\" value=\"org.apache.cordova.file.FileUtils\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"FileTransfer\"><param name=\"android-package\" value=\"org.apache.cordova.filetransfer.FileTransfer\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "res/values/strings.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<string name=\"fileSize\">File Size</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"currentDir\">Current Dir</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"drawer_open\">Open</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"drawer_close\">Close</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"category\">Category</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"internal\">Internal</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"external\">External</string>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "res/values/colors.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<color name=\"redcolor\">#FF0000</color>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<color name=\"graycolor\">#aaaaaa</color>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<color name=\"stat_font_color\">#9c917a</color>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<color name=\"main_background\">#171717</color>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<color name=\"green\">#8FCC85</color>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<color name=\"blue\">#ff33b5e5</color>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<color name=\"transparentgray\">#60aaaaaa</color>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<activity android:exported=\"true\" android:label=\"@string/app_name\" android:name=\"com.orleonsoft.android.simplefilechooser.ui.FileChooserActivity\" android:screenOrientation=\"portrait\"></activity>",
+                            "count": 1
+                        }
+                    ],
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.abdsoft.Hash": {
+            "PACKAGE_NAME": "com.satori.sha"
+        },
+        "com.maginsoft.mfilechooser": {
+            "PACKAGE_NAME": "com.satori.sha"
+        },
+        "org.apache.cordova.file-transfer": {
+            "PACKAGE_NAME": "com.satori.sha"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.satori.sha"
+        }
+    },
+    "dependent_plugins": {
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "com.satori.sha"
+        }
+    }
+}
