@@ -109,7 +109,7 @@ new (function() {
                     c.setName(a.name);
                     generateFileHash(b.getElementById("hash").value, a, {ready:function(hashResult) {
                         var software = knownHashes[hashResult.hex];
-                        var title = software ? software.title : "Unknown Software";
+                        var title = software ? software.title : "Unknown";
                         c.setResult(hashResult.hex, title);
                         g.push(a.name);
                         var progress = b.getElementById("progress");
@@ -123,7 +123,7 @@ new (function() {
             }
         }
         var p = null, s = null, b = null, c = null, d = [], g = [];
-        chrome.app.window.create("menu.html", {width:900, height:700, frame:"default"}, function(g) {
+        chrome.app.window.create("menu.html", {width:800, height:700, frame:"default"}, function(g) {
             c = g.contentWindow;
             b = c.document;
             c.onload = function() {

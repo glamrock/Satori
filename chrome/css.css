@@ -3,10 +3,10 @@ html {
 }
 
 body {
-	background: #000 url('img/background.jpg') top left fixed;
+	background: #000 url('img/background2_old.jpg') top left fixed;
     min-height:400px;
     margin: 0;
-    padding: none;
+    padding-top: 10px;
     color: #B49ABB; /* lavendar */
     text-shadow: 1px 1px 1px #000;
 	font-family: Arial, Verdana, Helvetica, sans-serif;
@@ -21,7 +21,7 @@ body {
     background-image: url('img/logo3b.png');
     float: right;
     width: 200px;
-    height: 83px;
+    height: 86px;
     margin-top: 24px;
 }
 
@@ -46,8 +46,10 @@ body {
 /* end language selector */
 
 #instructions {
-    margin-top: 15px;
-    float: right;
+   margin-top: 35px;
+   margin-right: -195px;
+   float: right;
+
 }
 #instructions ol {
     margin-top: -7px;
