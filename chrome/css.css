@@ -363,13 +363,13 @@ label:after {
 
 }
 
-div#sig pre {
+div.sig pre {
     background: #EDE5E2; /* light grey */
 
 }
 
 /* hidden/default */
-div#sig {
+div.sig {
     background: #EDE5E2; /* light grey */
     color: #ffffff; /*off-black*/
     text-align: center;
@@ -379,7 +379,7 @@ div#sig {
     text-shadow: none;
 }
 
-#sig input {
+.sig input {
     border: none;
     background: transparent;
     color: #888;
@@ -389,7 +389,7 @@ div#sig {
 }
 
 /* onclick/shown */
-input[type=checkbox]:checked ~ div#sig {
+input[type=checkbox]:checked ~ div.sig {
    display:block;
 }
 
