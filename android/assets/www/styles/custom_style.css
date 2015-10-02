@@ -184,13 +184,13 @@ label:after {
 
 }
 
-div#sig pre {
+div.sig pre {
     background: #EDE5E2; /* light grey */
 
 }
 
 /* hidden/default */
-div#sig {
+div.sig {
     background: azure;
     text-align: center;
     display:none;
@@ -200,7 +200,7 @@ div#sig {
     color: #000000;
 }
 
-#sig input {
+.sig input {
     border: none;
     color: #888;
     width: 90%;
