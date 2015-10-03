@@ -10,7 +10,7 @@ body{
 .first-language{
     position:fixed;
     right:20px;
-    bottom: 40px;
+    bottom: 40px; 
 }
 
 .top-guide-log :hover {
@@ -106,9 +106,12 @@ select#language {
 
 
 .page-language{
-    position:fixed;
+/*    position:fixed;
     bottom: 40px;
-    right: 20px;
+    right: 20px; */
+    margin-right: 0 auto;
+    margin-left: 0 auto;
+    padding: 10px;
 }
 
 /* download lists */
@@ -132,7 +135,6 @@ select#language {
 #dlselect a {
     padding: 2px 8px 2px 8px;
     text-decoration: none;
-    background-color: steelblue;
     color: white;
     border-style: solid;
     border-radius: 10px;
@@ -211,9 +213,9 @@ div.sig {
 }
 
 /* onclick/shown */
-/*input[type=checkbox]:checked ~ div#sig {
+input[type=checkbox]:checked ~ div.sig {
     display:block;
-}*/
+}
 
 .software-guide{
     display: inline-block;
@@ -283,9 +285,6 @@ input.getacross {
     font-size:18px;
 }
 
-
-
-
 .veryfiy-software{
     text-align: left;
     /* background-color: rgba(0, 0, 0, 0.5); */
@@ -302,6 +301,15 @@ input.getacross {
     border-width: 2px;
 }
 
+img.logo {
+    display: block;
+    overflow:hidden;
+    position:relative;
+}
+
+a img {
+    margin-bottom: -10px; /* valign the download icon */
+}
 
 
 .confirm-log{
@@ -368,9 +376,8 @@ input.getacross {
     right: 20px;
 }
 select#language {
-    font-size: 12px;
-
-    width: 110px;
+    font-size: 14px;
+    width: 50%;
 }
 .software-guide {
 
@@ -393,7 +400,8 @@ select#language {
     line-height: 18px;
     margin-bottom: 5px;
     list-style: inherit;
-    background-color: gainsboro;
+    background-color: #F3FAFB;
+    box-shadow: 5px 5px 2px 0px rgba(209,235,235,1);    
     font-size: 18px;
     padding: 15px;
 }

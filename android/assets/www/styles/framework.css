@@ -49,10 +49,15 @@ a:hover{
 	color: #000;
 }
 
-div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code, pre {
+div, a, p, img.logo, blockquote, form, fieldset, textarea, input, label, iframe, code, pre {
 	display: block;
 	overflow:hidden;
 	position:relative;
+}
+
+a img {
+	background:none;
+
 }
 
 p {
@@ -379,7 +384,7 @@ a{
 }
 
 .highlight-turqoise{	 background-color:#16a085;	}
-.highlight-green{  	 	background-color:#27ae60;	}
+.highlight-green{  	 	background-color:#04A390;	}
 .highlight-blue{   		 background-color:#2980b9;	}
 .highlight-magenta{	  background-color:#8e44ad;	}
 .highlight-dark{		 background-color:#2c3e50;	}
@@ -466,7 +471,7 @@ a{
 .button-turqoise{			background-color:#16a085;	}
 .button-turqoise:active{	 background-color:#085b4b;	}
 
-.button-green{			   background-color:#27ae60;	}
+.button-green{			   background-color:#04A390;	}
 .button-green:active{		background-color:#177c42;	}
 
 .button-blue{				background-color:#2980b9;	}
@@ -1097,7 +1102,7 @@ table tr:hover td{
 }
 
 .green-chart{
-	background-color:#27ae60;
+	background-color:#04A390;
 	margin:3px;
 	height:14px;
 	opacity:0.9;
@@ -1144,7 +1149,7 @@ table tr:hover td{
 }
 
 .green-notification{
-	background-color:#27ae60;
+	background-color:#04A390;
 	color:#FFFFFF;	
 }
 
@@ -1212,9 +1217,8 @@ table tr:hover td{
 }
 
 .static-notification-green{
-	background-color:#27ae60;
+	background-color:#04A390;
 	color:#FFFFFF;
-	margin-bottom:20px;
 }
 
 .static-notification-green p{
@@ -1379,7 +1383,7 @@ table tr:hover td{
 }
 
 .toggle-3-active-background{
-	background-color:#27ae60!important;
+	background-color:#04A390!important;
 }
 
 .toggle-3-active-ball{

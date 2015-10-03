@@ -120,7 +120,7 @@ body {
 }
 
 .column img{
-	float:left;
+	/*float:left;*/
 	margin-right:20px;
 	margin-bottom:20px;
 }
@@ -353,7 +353,7 @@ body {
 }
 
 .green-changer{
-	background-color:#27ae60;
+	background-color:#04A390;
 	width:20px;
 	height:20px;
 	float:left;
