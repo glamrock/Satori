@@ -231,13 +231,13 @@ a{
 /*////////////////////////*/
 
 .content{
-	margin-left:20px;
-	margin-right:20px;
+	margin-left:0px;
+	margin-right:0px;
 }
 
-.container{
+/*.container{
 	margin-bottom:20px;
-}
+}*/
 
 .no-bottom{
 	margin-bottom:0px;
@@ -1189,7 +1189,6 @@ table tr:hover td{
 	padding-top:0px;
 	border-bottom:solid 1px rgba(255,255,255,0.2);
 }
-
 
 .close-big-notification{
 	font-size:14px;
