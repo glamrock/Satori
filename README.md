@@ -33,7 +33,7 @@ Satori uses Artistic License 2.0, a [supervillain-friendly](http://i.imgur.com/1
 
 * [Google Closure](https://code.google.com/p/closure-library/) (compiled.js) licensed under Apache 2.0.
 * [GPG4Win](https://gpg4win.org) is provided under [GNU Public License](http://gpg4win.org/license.html). 
-* [Tor](https://torproject.org) Browser Bundle [has several licenses](https://gitweb.torproject.org/builders/tor-browser-bundle.git/tree/HEAD:/Bundle-Data/Docs/Licenses). 
+* [Tor Browser](https://torproject.org) Browser Bundle [has several licenses](https://gitweb.torproject.org/builders/tor-browser-bundle.git/tree/HEAD:/Bundle-Data/Docs/Licenses). 
 * [TorBirdy](https://addons.mozilla.org/en-us/thunderbird/addon/torbirdy/) is released under the BSD license.
 * [Enigmail](https://www.enigmail.net/home/index.php) is licensed under the GNU Public License version 2.
 
