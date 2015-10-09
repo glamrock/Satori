@@ -32,6 +32,14 @@ body{
     height:40px;
 }
 
+p.version {
+    margin-left: 40%;
+    background-color: rgba(255,255,255,0.5);
+    width: 20%;
+    text-align: center;
+}
+
+
 .language{
     text-align: right;
     margin-right: 20px;
@@ -50,7 +58,7 @@ select#language {
     background-position: 97% center;
     background-repeat: no-repeat;
     background-color: #ae83a5;
-    background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#ae83a5, #ae83a5 40%, #ae83a5);
+    background-image: url('../images/lang_arrow.jpg'), -webkit-linear-gradient(#ae83a5, #ae83a5 40%, #ae83a5);
     border: 1px solid #AAA;
     color: #fff;
     font-size: 20px;
@@ -239,7 +247,6 @@ input[type=checkbox]:checked ~ div.sig {
 }
 .bridge{
     color: #000000;
-    border: 2px dashed darkgoldenrod;
     padding: 10px;
     border-radius: 5px;
 }
@@ -435,6 +442,8 @@ select#language {
 }
 .button-green {
    font-size: 20px;
+   background-color: #32626E;
+   box-shadow: inset -2px -2px 2px 0px rgba(26,67,77,0.5);
 }
 
 .header-help{
