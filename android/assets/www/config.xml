@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.satori.Satori" version="0.9" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.satori.Satori" version="0.99" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Satori</name>
     <description>
         Privacy tools and learning materials in a box
@@ -28,4 +28,8 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <preference name="orientation" value="portrait" />
+    <icon src="48.png" platform="android" density="ldpi" />
+    <icon src="48.png" platform="android" density="mdpi" />
+    <icon src="128.png" platform="android" density="hdpi" />
+    <icon src="128.png" platform="android" density="xhdpi" />
 </widget>
