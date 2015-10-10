@@ -13,7 +13,7 @@ body {
 
 .page-content{
     background-color: #2B4D66;
-    background: url('../images/03e.jpg') bottom;
+    background: url('../images/content-bg.jpg') bottom;
     /* background-size: cover; */
     z-index: 10;
     background-position-y: initial;

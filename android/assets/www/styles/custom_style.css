@@ -33,12 +33,16 @@ body{
 }
 
 p.version {
-    margin-left: 40%;
+    margin-left: 30%;
     background-color: rgba(255,255,255,0.5);
-    width: 20%;
+    width: 40%;
     text-align: center;
+    color: #000000;
 }
 
+.white {
+    color: #ffffff;
+}
 
 .language{
     text-align: right;
@@ -266,6 +270,9 @@ input.getacross {
 
 .help-bridge{
     margin-top:20px;
+    padding: 20px;
+    color: #ffffff;
+    background-color: rgba(0,0,00,0.5);
 }
 
 .check-title{
@@ -407,10 +414,11 @@ select#language {
     line-height: 18px;
     margin-bottom: 5px;
     list-style: inherit;
-    background-color: #F3FAFB;
-    box-shadow: 5px 5px 2px 0px rgba(209,235,235,1);    
+    background-color: rgba(243,250,251,0.8);
+    box-shadow: 0px 2px 2px 0px rgba(209,235,235,0.5);   
     font-size: 18px;
     padding: 15px;
+
 }
 .os-list li span{
     width: 60%;
@@ -447,7 +455,7 @@ select#language {
 }
 
 .header-help{
-    background-image: url(../images/icons/infoabout.png);
+    background-image: url('../images/icons/infoabout.png');
     background-repeat: no-repeat;
     background-position: 20px 15px;
     background-size: 25px 25px;
