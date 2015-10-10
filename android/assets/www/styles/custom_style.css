@@ -188,7 +188,7 @@ label { /* verification selector */
     margin: 10px 0 10px 0;
     padding: 3px 20px 3px 10px;
     cursor: pointer;
-    background-color: darkcyan;
+    background-color: #0B7A7A;
 }
 
 /* down arrow after checksum */
@@ -205,13 +205,17 @@ div.sig pre {
 
 /* hidden/default */
 div.sig {
-    background: azure;
     text-align: center;
     display:none;
     font-size: 17px;
     text-shadow: none;
     padding-top: 10px;
     color: #000000;
+}
+
+div.sha-code a {
+    color: #8514A3;
+    font-weight: bold;
 }
 
 .sig input {
@@ -252,7 +256,9 @@ input[type=checkbox]:checked ~ div.sig {
 .bridge{
     color: #000000;
     padding: 10px;
+    margin-top: 5%;
     border-radius: 5px;
+    background-color: rgba(255,255,255,0.5);
 }
 input.getacross {
     background: transparent;
@@ -278,6 +284,7 @@ input.getacross {
 .check-title{
     margin-left:20px;
     font-size:22px;
+    margin-top: 5%;
 }
 .select-part{
     display: inline-block;
@@ -301,7 +308,7 @@ input.getacross {
 
 .veryfiy-software{
     text-align: left;
-    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: rgba(255, 255, 255, 0.5); 
     border-radius: 5px;
     border: 0px;
     margin-top: 15px;
@@ -310,9 +317,9 @@ input.getacross {
     z-index: 5;
     line-height: 28px;
     color: black;
-    border: darkgoldenrod;
+    /*border: darkgoldenrod;
     border-style: dashed;
-    border-width: 2px;
+    border-width: 2px;*/
 }
 
 img.logo {
@@ -350,6 +357,8 @@ a img {
 
 .help-verify{
     line-height: 35px;
+    background-color: rgba(0,0,0,0.3);
+    color: #ffffff;
 }
 .verify-guide{
     display: inline-block;
@@ -363,7 +372,7 @@ a img {
 .check-title {
     margin-left: 10px;
     font-size: 20px;
-    color: #000000;
+    color: #ffffff;
 }
 .select-file {
     margin-left: 30px;

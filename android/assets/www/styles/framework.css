@@ -431,11 +431,14 @@ a{
 }
 
 .button-big{
-	text-align:center;
-	color:#FFFFFF;
-	padding:10px 26px;
-	display:inline-block;
-	margin-bottom:2px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 26px;
+    display: inline-block;
+    margin-bottom: 2px;
+    font-size: 20px;
+    margin-left: 30%;
+    width: 40%;
 }
 
 .button-big-icon{
@@ -472,8 +475,9 @@ a{
 .button-green{			   background-color:#04A390;	}
 .button-green:active{		background-color:#177c42;	}
 
-.button-blue{				background-color:#2980b9;	}
-.button-blue:active{		 background-color:#195a84;	}
+/* MADE PINK */
+.button-blue{				background-color:#A54F68;	}
+.button-blue:active{		 background-color:#732B43;	}
 
 .button-magenta{			 background-color:#8e44ad;	}
 .button-magenta:active{	  background-color:#61267a;	}
@@ -1214,7 +1218,8 @@ table tr:hover td{
 }
 
 .static-notification-green{
-	background-color:#04A390;
+	/*background-color:#04A390;*/
+	background-color: #32626E;
 	color:#FFFFFF;
 }
 
