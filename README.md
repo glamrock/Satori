@@ -1,6 +1,7 @@
 ##Satori
 
-![https://chrome.google.com/webstore/detail/satori/oncomejlklhkbffpdhpmhldlfambmjlf?utm_source=chrome-ntp-icon](chrome.png) 
+[![chrome.png]](https://chrome.google.com/webstore/detail/satori/oncomejlklhkbffpdhpmhldlfambmjlf?utm_source=chrome-ntp-icon) 
+
 
 ###Distributed, tamper-resistant circumvention tools
 
@@ -16,7 +17,6 @@ What Satori does is provide access to verifiable bundles of privacy-enhancing so
 ###Software
 * Tor Browser Bundle for fifteen languages for Linux, Windows, and Mac.
 * Enigmail - encryption plugin for Thunderbird
-* TorBirdy - allows you to send and receive email over the Tor network
 * GPG4Win - required to gpg-encrypt email
 
 ###Danger! High Voltage!!
@@ -30,11 +30,12 @@ This software is currently ***beta***.
 
 Satori uses Artistic License 2.0, a [supervillain-friendly](http://i.imgur.com/1xV099o.jpg) license.
 
+* [Tor Browser](https://torproject.org) Browser Bundle [has several licenses](https://gitweb.torproject.org/builders/tor-browser-bundle.git/tree/HEAD:/Bundle-Data/Docs/Licenses). 
+* [Lantern](https://getlantern.org) is licensed under the Apache v2 license.
+* [Psiphon](https://psiphon.ca/) is licensed under the GNU Public License version 3.
+* [Enigmail](https://www.enigmail.net/home/index.php) is licensed under the GNU Public License version 2.
 * [Google Closure](https://code.google.com/p/closure-library/) (compiled.js) licensed under Apache 2.0.
 * [GPG4Win](https://gpg4win.org) is provided under [GNU Public License](http://gpg4win.org/license.html). 
-* [Tor Browser](https://torproject.org) Browser Bundle [has several licenses](https://gitweb.torproject.org/builders/tor-browser-bundle.git/tree/HEAD:/Bundle-Data/Docs/Licenses). 
-* [TorBirdy](https://addons.mozilla.org/en-us/thunderbird/addon/torbirdy/) is released under the BSD license.
-* [Enigmail](https://www.enigmail.net/home/index.php) is licensed under the GNU Public License version 2.
 
 
 ###Thanks
@@ -56,8 +57,6 @@ Also thanks to Redacted, for answering my question about SHA256sum checking at L
 * *Au Revoir Simone* "Still Night, Still Light"
 
 **Credits**<br>
-Bubble heart icon by <a href="http://ciaracable.com">Ciara Cable</a>, used with permission. Download icon by  <a href="http://lunartemplates.com" target="_blank">Lunar Templates</a>. 
-
 As mentioned above, Satori uses [Google's Closure API](http://docs.closure-library.googlecode.com/git/namespace_goog_crypt.html) to generate sha256 checksums for software.
 
 ###[Contact](https://github.com/glamrock/contact)
