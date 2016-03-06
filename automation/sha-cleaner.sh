@@ -54,6 +54,7 @@ sed -i 's/_fa/ (fa)/g' ./sha-temp.txt
 sed -i 's/_fr/ (fr)/g' ./sha-temp.txt 
 sed -i 's/_it/ (it)/g' ./sha-temp.txt 
 sed -i 's/_ko/ (ko)/g' ./sha-temp.txt 
+sed -i 's/_jp/ (jp)/g' ./sha-temp.txt 
 sed -i 's/_nl/ (nl)/g' ./sha-temp.txt 
 sed -i 's/_pl/ (pl)/g' ./sha-temp.txt 
 sed -i 's/_pt-PT/ (pt-PT)/g' ./sha-temp.txt 
