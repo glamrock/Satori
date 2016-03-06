@@ -1,7 +1,7 @@
 ##Satori
 
 [![chrome.png]](https://chrome.google.com/webstore/detail/satori/oncomejlklhkbffpdhpmhldlfambmjlf?utm_source=chrome-ntp-icon) 
-
+[![android.png]](https://play.google.com/store/apps/details?id=com.satori.Satori) 
 
 ###Distributed, tamper-resistant circumvention tools
 
@@ -10,20 +10,17 @@ An unfiltered internet is critical to free speech and self-determination -- the 
 What Satori does is provide access to verifiable bundles of privacy-enhancing software to those who need it most.
 
 ###Features
-* language detection to offer the right download
-* distributed downloads, with options on Github, Amazon, and the Chrome Web Store itself
-* SHA256sum checker to help verify software integrity
+* Downloads from un-censored locations
+* Software integrity checker to compare with thousands of pieces of security software
+* Tor bridge distribution
 
 ###Software
-* Tor Browser Bundle for fifteen languages for Linux, Windows, and Mac.
-* Enigmail - encryption plugin for Thunderbird
-* GPG4Win - required to gpg-encrypt email
-
-###Danger! High Voltage!!
-This software is currently ***beta***.
-
-###Code notes
-* Distributing a hash for the outer container when using Chrome as backbone is tricky, as the outer container can vary slightly. The inner TBB will always have the same checksum, however. (Thanks DCF for testing with this).
+* Lantern for Windows, Mac, and Debian-based Linux distributions.
+* F-Droid for Android.
+* Psiphon for Windows and Android.
+* Tor Browser for Windows, Mac, and Debian-based Linux distributions.
+* Enigmail - encryption plugin (requires Thunderbird email client).
+* GPG4Win - required to encrypt email on Windows.
 
 ###Licenses
 **Note: All of the software distributed can be used for free, and are open-source.**
@@ -37,27 +34,10 @@ Satori uses Artistic License 2.0, a [supervillain-friendly](http://i.imgur.com/1
 * [Google Closure](https://code.google.com/p/closure-library/) (compiled.js) licensed under Apache 2.0.
 * [GPG4Win](https://gpg4win.org) is provided under [GNU Public License](http://gpg4win.org/license.html). 
 
+###[Thanks](thanks.md)
 
-###Thanks
-
-**People**<br>
-Many thanks to all of the people who gave feedback, particularly David Fifield, who found several annoying issues with an early version. (And who has seriously *legit* musical taste).
-
-[Katie Krauss](https://twitter.com/aidspol) offered great advice early on, and recommended a feature to alert users that their selection was downloading. (Which is not obvious after clicking, since any progress meter happens in a regular Chrome window).
-
-And as always, thanks to those who *must* remain anonymous, for taking the time to test against filters and give usability feedback. :love_letter:
-
-Also thanks to Redacted, for answering my question about SHA256sum checking at LibrePlanet. Truly, your help has been redacted redacted.  Redacted!
-
-**Music**
-* *Black Marble* "A Different Arrangement"
-* *She Wants Revenge* discography
-* *Lincoln County Historical Society* "Die Bastards"
-* *Thomas Azier* "Hylas 002" & "Verwandlung" EPs
-* *Au Revoir Simone* "Still Night, Still Light"
-
-**Credits**<br>
-As mentioned above, Satori uses [Google's Closure API](http://docs.closure-library.googlecode.com/git/namespace_goog_crypt.html) to generate sha256 checksums for software.
+###Code notes
+(2014) Distributing a hash for the outer container when using Chrome as backbone is tricky, as the outer container can vary slightly. The inner TBB will always have the same checksum, however. (Thanks DCF for testing with this). For this reason, I ultimately decided to use Amazon, Github, and other distribution networks.
 
 ###[Contact](https://github.com/glamrock/contact)
 griffin [@](at) cryptolab.net
