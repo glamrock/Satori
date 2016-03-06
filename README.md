@@ -1,7 +1,7 @@
 ##Satori
 
-[![chrome.png]](https://chrome.google.com/webstore/detail/satori/oncomejlklhkbffpdhpmhldlfambmjlf?utm_source=chrome-ntp-icon) 
-[![android.png]](https://play.google.com/store/apps/details?id=com.satori.Satori) 
+[![Get it for Chrome](chrome.png)](https://chrome.google.com/webstore/detail/satori/oncomejlklhkbffpdhpmhldlfambmjlf?utm_source=chrome-ntp-icon)
+[![Get it for Android](android.png)](https://play.google.com/store/apps/details?id=com.satori.Satori)
 
 ###Distributed, tamper-resistant circumvention tools
 
@@ -16,10 +16,10 @@ What Satori does is provide access to verifiable bundles of privacy-enhancing so
 
 ###Software
 * Lantern for Windows, Mac, and Debian-based Linux distributions.
-* F-Droid for Android.
 * Psiphon for Windows and Android.
 * Tor Browser for Windows, Mac, and Debian-based Linux distributions.
 * Enigmail - encryption plugin (requires Thunderbird email client).
+* F-Droid for Android.
 * GPG4Win - required to encrypt email on Windows.
 
 ###Licenses
@@ -27,9 +27,9 @@ What Satori does is provide access to verifiable bundles of privacy-enhancing so
 
 Satori uses Artistic License 2.0, a [supervillain-friendly](http://i.imgur.com/1xV099o.jpg) license.
 
-* [Tor Browser](https://torproject.org) Browser Bundle [has several licenses](https://gitweb.torproject.org/builders/tor-browser-bundle.git/tree/HEAD:/Bundle-Data/Docs/Licenses). 
 * [Lantern](https://getlantern.org) is licensed under the Apache v2 license.
 * [Psiphon](https://psiphon.ca/) is licensed under the GNU Public License version 3.
+* [Tor Browser](https://torproject.org) [has several licenses](https://gitweb.torproject.org/builders/tor-browser-bundle.git/tree/HEAD:/Bundle-Data/Docs/Licenses). 
 * [Enigmail](https://www.enigmail.net/home/index.php) is licensed under the GNU Public License version 2.
 * [Google Closure](https://code.google.com/p/closure-library/) (compiled.js) licensed under Apache 2.0.
 * [GPG4Win](https://gpg4win.org) is provided under [GNU Public License](http://gpg4win.org/license.html). 
